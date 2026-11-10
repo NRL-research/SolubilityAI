@@ -1,0 +1,15 @@
+{
+  "n_single_models": 36,
+  "spearman_rho": 0.9444015444015444,
+  "spearman_p": 5.392967618879466e-18,
+  "kendall_tau": 0.815873015873016,
+  "kendall_p": 2.5388883511933766e-12,
+  "pearson_r": 0.9699245060788876,
+  "pearson_p": 1.9088557200353666e-22,
+  "spearman_rho_competitive_band": 0.7443609022556391,
+  "spearman_p_competitive_band": 0.0001673956999851941,
+  "n_competitive": 20,
+  "median_bootstrap_ci_halfwidth_rmse": 0.015449999999999998,
+  "min_bootstrap_ci_halfwidth_rmse": 0.0030499999999999998,
+  "max_bootstrap_ci_halfwidth_rmse": 0.018750000000000003
+}

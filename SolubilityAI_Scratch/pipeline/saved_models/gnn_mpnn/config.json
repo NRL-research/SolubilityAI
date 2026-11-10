@@ -1,0 +1,79 @@
+{
+  "name": "gnn_mpnn",
+  "family": "gnn",
+  "feature_set": "graph",
+  "arch": {
+    "n_atom": 40,
+    "n_bond": 7,
+    "hidden": 200,
+    "layers": 4,
+    "n_global": 0,
+    "dropout": 0.1,
+    "head": 256
+  },
+  "train_hparams": {
+    "epochs": 80,
+    "lr": 0.001,
+    "bs": 64,
+    "wd": 1e-05
+  },
+  "seeds": [
+    42
+  ],
+  "y_mean": -2.90031445114969,
+  "y_std": 2.3719299348498,
+  "desc_names": null,
+  "input": "SMILES string(s)",
+  "output": "predicted LogS (log10 mol/L)",
+  "trained_on": "data/06_train.csv (n=7365)",
+  "dataset": "v1",
+  "cv": {
+    "per_fold": [
+      {
+        "rmse": 1.1287509700910552,
+        "mae": 0.7411861378106863,
+        "r2": 0.7600544824246225
+      },
+      {
+        "rmse": 1.064137733950484,
+        "mae": 0.7490469385740268,
+        "r2": 0.7993123752718448
+      },
+      {
+        "rmse": 1.0883307932533548,
+        "mae": 0.7250813578098265,
+        "r2": 0.8049038154576507
+      },
+      {
+        "rmse": 1.1711187560539746,
+        "mae": 0.784165824333286,
+        "r2": 0.7562709137132974
+      },
+      {
+        "rmse": 1.0388930385693733,
+        "mae": 0.7202821399492636,
+        "r2": 0.8029481659846454
+      }
+    ],
+    "pooled": {
+      "rmse": 1.0992617436037007,
+      "mae": 0.7439553179843331,
+      "r2": 0.7852176866722602
+    }
+  },
+  "model_files": [
+    "model_seed42.pt"
+  ],
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "sklearn": "1.8.0",
+    "rdkit": "2026.03.6",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.2.0",
+    "catboost": "1.2.10",
+    "torch": "2.14.0+cu130"
+  },
+  "training_script": "scripts/05_gnn.py gnn_mpnn 0 80 42"
+}

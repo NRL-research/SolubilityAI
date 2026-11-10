@@ -1,0 +1,121 @@
+{
+  "name": "blend_nnls",
+  "family": "blend",
+  "components": [
+    {
+      "folder": "ridge_desc",
+      "weight": 0.018869209148994794
+    },
+    {
+      "folder": "knn_morganbits_k5",
+      "weight": 0.0006458400424107149
+    },
+    {
+      "folder": "svr_desc",
+      "weight": 0.0608126714212095
+    },
+    {
+      "folder": "mlp_desc",
+      "weight": 0.03367488495837529
+    },
+    {
+      "folder": "lgbm_desc_maccs",
+      "weight": 0.09907362704898634
+    },
+    {
+      "folder": "lgbm_desc_v2",
+      "weight": 0.012814916010334253
+    },
+    {
+      "folder": "xgb_desc_morgan_v2",
+      "weight": 0.03454191327891469
+    },
+    {
+      "folder": "svr_desc_v2",
+      "weight": 0.03530110438513782
+    },
+    {
+      "folder": "gnn_mpnn",
+      "weight": 0.19149639336795676
+    },
+    {
+      "folder": "gnn_hybrid",
+      "weight": 0.14215517394618576
+    },
+    {
+      "folder": "lgbm_mordred",
+      "weight": 0.20439404895872587
+    },
+    {
+      "folder": "lgbm_desc_mordred",
+      "weight": 0.18380946887269237
+    }
+  ],
+  "intercept": 0.04124231880869722,
+  "combination": "LogS = intercept + sum_i weight_i * predict_i(SMILES), predict_i = saved_models/<folder>/predict.py",
+  "candidate_pool": [
+    "esol4_linear",
+    "ridge_desc",
+    "knn_morganbits_k5",
+    "rf_morgan",
+    "rf_desc",
+    "rf_desc_morgan",
+    "lgbm_desc",
+    "svr_desc",
+    "mlp_desc",
+    "lgbm_desc_morgan",
+    "xgb_desc_morgan",
+    "catboost_desc",
+    "et_desc_morgan",
+    "lgbm_desc_maccs",
+    "lgbm_desc_v2",
+    "lgbm_desc_morgan_v2",
+    "xgb_desc_morgan_v2",
+    "svr_desc_v2",
+    "rf_desc_v2",
+    "catboost_desc_v2",
+    "gnn_mpnn",
+    "gnn_hybrid",
+    "lgbm_mordred",
+    "lgbm_desc_mordred"
+  ],
+  "weight_fitting": "fit_nnls on all train OOF predictions",
+  "input": "SMILES string(s)",
+  "output": "predicted LogS (log10 mol/L)",
+  "cv": {
+    "per_fold": [
+      {
+        "rmse": 0.9028403119278363,
+        "mae": 0.6203022199044048,
+        "r2": 0.8402356943106863
+      },
+      {
+        "rmse": 0.8911336782622896,
+        "mae": 0.6337799798627162,
+        "r2": 0.8559194796975965
+      },
+      {
+        "rmse": 0.868087127939706,
+        "mae": 0.5823209986797947,
+        "r2": 0.8766551069395045
+      },
+      {
+        "rmse": 0.9122447485757691,
+        "mae": 0.6216172810672475,
+        "r2": 0.8499852840706696
+      },
+      {
+        "rmse": 0.8581736530336764,
+        "mae": 0.5970387060515951,
+        "r2": 0.8640629388907588
+      }
+    ],
+    "pooled": {
+      "rmse": 0.8866485563203887,
+      "mae": 0.6109425726229791,
+      "r2": 0.8581240430089325
+    },
+    "nested": true
+  },
+  "training_script": "scripts/06_blend.py"
+}

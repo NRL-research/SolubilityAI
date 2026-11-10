@@ -1,0 +1,92 @@
+{
+  "A_identity_leakage": {
+    "train_vs_test": {
+      "n_shared_keys": 0,
+      "examples": []
+    },
+    "train_vs_sc": {
+      "n_shared_keys": 0,
+      "examples": []
+    },
+    "test_vs_sc": {
+      "n_shared_keys": 0,
+      "examples": []
+    },
+    "pass": true
+  },
+  "B_cv_folds": {
+    "test_in_any_fold": 0,
+    "train_without_fold": 0,
+    "fold_sizes": [
+      1474,
+      1473,
+      1473,
+      1473,
+      1472
+    ],
+    "duplicate_mol_ids": 0,
+    "per_fold": [
+      {
+        "fold": 0,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      },
+      {
+        "fold": 1,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      },
+      {
+        "fold": 2,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      },
+      {
+        "fold": 3,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      },
+      {
+        "fold": 4,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      }
+    ],
+    "pass": true
+  },
+  "C_model_reload": {
+    "r2_blend_nnls_ergfix": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8308976797227793,
+      "test_r2": 0.870703941475423,
+      "recorded_test_rmse": 0.8308976797000001,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_lgbm_d_av_erg2": {
+      "ref_max_abs_diff": 8.881784197001252e-16,
+      "test_rmse": 0.8715456102978302,
+      "test_r2": 0.8577440522981883,
+      "recorded_test_rmse": 0.8715456103,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_lgbm_desc_mordred_avalon_erg2": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8581514564356506,
+      "test_r2": 0.8620829111875106,
+      "recorded_test_rmse": 0.8581514564,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    }
+  },
+  "all_pass": true
+}

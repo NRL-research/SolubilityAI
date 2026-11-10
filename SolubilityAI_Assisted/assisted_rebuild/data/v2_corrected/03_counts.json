@@ -1,0 +1,60 @@
+{
+  "source_file": "/home/claude/work/data/v1_sc_filtered/aqsoldb_sc_filtered.csv",
+  "dataset_version": "v2_sc_filtered_scaffold_fixed",
+  "split_seed": 42,
+  "n_total": 9872,
+  "n_acyclic": 2940,
+  "pct_acyclic": 29.78,
+  "n_train": 6505,
+  "n_val": 1393,
+  "n_test": 1974,
+  "acyclic_train": 1863,
+  "acyclic_val": 456,
+  "acyclic_test": 621,
+  "n_distinct_split_keys": 4965,
+  "pct_of_test_acyclic": 31.46,
+  "cv_folds": [
+    {
+      "fold": 0,
+      "n_train": 5879,
+      "n_val": 2019,
+      "n_val_scaffold_groups": 196,
+      "pct_val_acyclic": 5.84
+    },
+    {
+      "fold": 1,
+      "n_train": 6426,
+      "n_val": 1472,
+      "n_val_scaffold_groups": 853,
+      "pct_val_acyclic": 33.76
+    },
+    {
+      "fold": 2,
+      "n_train": 6430,
+      "n_val": 1468,
+      "n_val_scaffold_groups": 1029,
+      "pct_val_acyclic": 41.76
+    },
+    {
+      "fold": 3,
+      "n_train": 6426,
+      "n_val": 1472,
+      "n_val_scaffold_groups": 914,
+      "pct_val_acyclic": 36.89
+    },
+    {
+      "fold": 4,
+      "n_train": 6431,
+      "n_val": 1467,
+      "n_val_scaffold_groups": 911,
+      "pct_val_acyclic": 37.36
+    }
+  ],
+  "cv_seed": 42,
+  "verification_test_absent_from_cv_pool": true,
+  "random_split": {
+    "n_train": 6318,
+    "n_val": 1580,
+    "n_test": 1974
+  }
+}

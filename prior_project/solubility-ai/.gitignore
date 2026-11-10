@@ -1,0 +1,159 @@
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ─── Virtual Environments ────────────────────────────────────────────────────
+venv/
+env/
+ENV/
+.env/
+.venv/
+conda-env/
+# But keep environment definition files
+!environment.yml
+!requirements.txt
+
+# ─── Environment & Secrets ───────────────────────────────────────────────────
+# NEVER commit API keys or credentials
+.env
+.env.*
+config.json
+secrets.json
+api_keys.txt
+*_key.txt
+*.pem
+*.key
+
+# ─── Jupyter / Colab ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+# Keep notebooks themselves — commit them
+# But strip outputs before committing (use nbstripout or similar):
+# pip install nbstripout && nbstripout --install
+
+# ─── Raw Data (large files — download separately, see data/README.md) ────────
+data/raw/
+*.csv.gz
+*.csv.zip
+
+# Keep processed splits (small, important for reproducibility)
+!data/processed/
+!data/processed/*.csv
+
+# ─── Model Weights (too large for git — use git-lfs or cloud storage) ────────
+models/**/*.joblib
+models/**/*.pkl
+models/**/*.pt
+models/**/*.pth
+models/**/*.ckpt
+models/**/*.h5
+models/**/*.bin
+models/**/*.cbm
+models/**/*.onnx
+dissolvr/model/
+# Keep model README
+!models/README.md
+!models/**/README.md
+
+# ─── Large Result Files ───────────────────────────────────────────────────────
+# Commit small metric summaries but not full prediction CSVs
+results/rag_results_batched.csv
+results/rag_results_*.csv
+# Keep summary metrics
+!results/metrics_summary.csv
+!results/figures/
+
+# ─── RDKit / Cheminformatics Artifacts ───────────────────────────────────────
+*.sdf
+*.mol2
+*.smi.gz
+rdkit_cache/
+.rdkit/
+
+# ─── Google Colab / Drive ────────────────────────────────────────────────────
+# If you mount Drive inside the repo directory
+drive/
+sample_data/
+content/
+# Colab temp files
+*.colab_checkpoints
+
+# ─── PyTorch / CUDA ──────────────────────────────────────────────────────────
+*.pth
+*.pt
+runs/           # TensorBoard logs
+lightning_logs/
+wandb/
+mlruns/
+
+# ─── CatBoost ────────────────────────────────────────────────────────────────
+catboost_info/
+*.cbm
+
+# ─── Optuna ──────────────────────────────────────────────────────────────────
+*.db           # SQLite study files
+optuna_storage/
+
+# ─── IDEs and Editors ────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyproject
+.spyderproject/
+.ropeproject
+.mypy_cache/
+.dmypy.json
+
+# ─── OS Artifacts ────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─── Logs and Profiling ──────────────────────────────────────────────────────
+*.log
+*.out
+*.err
+logs/
+profiling/
+*.prof
+
+# ─── Testing ─────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ─── Documentation Build ─────────────────────────────────────────────────────
+docs/_build/
+site/
+
+# ─── Temporary Files ─────────────────────────────────────────────────────────
+*.tmp
+*.bak
+*.orig
+tmp/
+temp/
+
+# ─── Derived / regeneratable artifacts ────────────────────────────────────────
+solubility_models/data/features_cache/
+*.npy
+misc/optuna_studies/*.db

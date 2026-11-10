@@ -1,0 +1,55 @@
+{
+  "config": "gatv2[graph+5desc]",
+  "model_type": "gatv2",
+  "library": "PyTorch + PyTorch Geometric",
+  "feature_set": "graph+5desc",
+  "n_features": null,
+  "seeds": [
+    42,
+    101,
+    123,
+    456,
+    789
+  ],
+  "save_method": "torch.save(model.state_dict())",
+  "file_extension": "pt",
+  "dataset_version": "v2_sc_filtered_scaffold_fixed",
+  "split_seed": 42,
+  "n_train": 7898,
+  "n_test": 1974,
+  "target": "LogS (log10 aqueous solubility, mol/L)",
+  "fitted_preprocessors": [],
+  "preprocessing_note": "none fitted on training data; featurization is a pure per-molecule function (non-finite -> 0, clip to +/-1e30)",
+  "hyperparameters": {
+    "architecture": "HybridMolecularGATv2",
+    "gat1": "GATv2Conv(17 -> 32, heads=4, edge_dim=4)",
+    "gat2": "GATv2Conv(128 -> 64, heads=2, edge_dim=4)",
+    "head": "Linear(133->64) -> Linear(64->32) -> Linear(32->1)",
+    "dropout": [
+      0.1,
+      0.2
+    ],
+    "pool": "global_mean_pool",
+    "optimizer": "AdamW(lr=0.001, weight_decay=0.01)",
+    "loss": "MSELoss",
+    "epochs": 60,
+    "batch_size": 64,
+    "scheduler": "ReduceLROnPlateau(factor=0.5, patience=3)"
+  },
+  "test_rmse": 1.2009483608009408,
+  "test_mae": 0.8781374311186301,
+  "test_r2": 0.7699768122882938,
+  "test_rmse_per_seed": [
+    1.1817931386876166,
+    1.193586581061887,
+    1.2412021007949918,
+    1.2909938652391717,
+    1.2309985106961119
+  ],
+  "test_rmse_seed_std": 0.038653,
+  "cv_pooled_oof_rmse": 1.1864,
+  "recorded_test_rmse": 1.2009483608009408,
+  "max_abs_diff_vs_recorded_predictions": 0.0,
+  "pip": "torch torch_geometric rdkit",
+  "description": "The Hybrid GATv2 graph neural network branch of the original SolubilityAI ensemble."
+}

@@ -1,0 +1,245 @@
+{
+  "A_identity_leakage": {
+    "train_vs_test": {
+      "n_shared_keys": 0,
+      "examples": []
+    },
+    "train_vs_sc": {
+      "n_shared_keys": 0,
+      "examples": []
+    },
+    "test_vs_sc": {
+      "n_shared_keys": 0,
+      "examples": []
+    },
+    "pass": true
+  },
+  "B_cv_folds": {
+    "test_in_any_fold": 0,
+    "train_without_fold": 0,
+    "fold_sizes": [
+      1474,
+      1473,
+      1473,
+      1473,
+      1472
+    ],
+    "duplicate_mol_ids": 0,
+    "per_fold": [
+      {
+        "fold": 0,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      },
+      {
+        "fold": 1,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      },
+      {
+        "fold": 2,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      },
+      {
+        "fold": 3,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      },
+      {
+        "fold": 4,
+        "shared_mol_ids": 0,
+        "shared_groups": 0,
+        "shared_identity_keys": 0
+      }
+    ],
+    "pass": true
+  },
+  "C_model_reload": {
+    "gnn_hybrid_s43": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.9537716295857636,
+      "test_r2": 0.8296355429274684,
+      "recorded_test_rmse": 0.9537716295857636,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "gnn_hybrid_s44": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.9429221032949059,
+      "test_r2": 0.8334894228531324,
+      "recorded_test_rmse": 0.942922103294906,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "gnn_mpnn_s43": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.9960891696553817,
+      "test_r2": 0.8141824927130868,
+      "recorded_test_rmse": 0.9960891696553816,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_blend_nnls": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8309404655040601,
+      "test_r2": 0.8706906253344655,
+      "recorded_test_rmse": 0.8309400321505803,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_catboost_dm": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8758199161743471,
+      "test_r2": 0.8563453040529669,
+      "recorded_test_rmse": 0.8758199161743471,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_gnn_hybrid_ens2": {
+      "ref_max_abs_diff": 8.881784197001252e-16,
+      "test_rmse": 0.9338102138777188,
+      "test_r2": 0.8366920100758825,
+      "recorded_test_rmse": 0.9338102138777188,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_gnn_hybrid_ens3": {
+      "ref_max_abs_diff": 8.881784197001252e-16,
+      "test_rmse": 0.9194056139459327,
+      "test_r2": 0.8416914044272112,
+      "recorded_test_rmse": 0.9194056139459328,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_gnn_mpnn_ens2": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.9551032384234681,
+      "test_r2": 0.8291595019672142,
+      "recorded_test_rmse": 0.955103238423468,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_lgbm_d_ap_tt": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8861602042767316,
+      "test_r2": 0.85293318766156,
+      "recorded_test_rmse": 0.8861602042767316,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_lgbm_d_av_erg": {
+      "ref_max_abs_diff": 8.881784197001252e-16,
+      "test_rmse": 0.8690488191877954,
+      "test_r2": 0.8585579503186662,
+      "recorded_test_rmse": 0.8691040949921441,
+      "ref_match": true,
+      "test_metric_match": false,
+      "status": "FAIL"
+    },
+    "r2_lgbm_d_crip_pack": {
+      "ref_max_abs_diff": 2.220446049250313e-16,
+      "test_rmse": 0.8936161757675902,
+      "test_r2": 0.8504479960950873,
+      "recorded_test_rmse": 0.8936161757675902,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_lgbm_desc_mordred_avalon_erg": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8654627185197983,
+      "test_r2": 0.8597228535861217,
+      "recorded_test_rmse": 0.8654299815549328,
+      "ref_match": true,
+      "test_metric_match": false,
+      "status": "FAIL"
+    },
+    "r2_lgbm_dm_crip_pack": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.875545421807158,
+      "test_r2": 0.856435336774974,
+      "recorded_test_rmse": 0.875545421807158,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_lgbm_dm_huber": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8702209240850791,
+      "test_r2": 0.8581761611388191,
+      "recorded_test_rmse": 0.8702209240850791,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_lgbm_dm_m2v": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8787276811797234,
+      "test_r2": 0.8553898393378251,
+      "recorded_test_rmse": 0.8787276811797234,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_lgbm_m2v": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 1.0952798519529354,
+      "test_r2": 0.7753324284099088,
+      "recorded_test_rmse": 1.0952798519529354,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_stack_lgbm_meta": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8588476456894742,
+      "test_r2": 0.8618590454774273,
+      "recorded_test_rmse": 0.8588476456894742,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_stack_ridge": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 0.8359889881601615,
+      "test_r2": 0.8691145690482049,
+      "recorded_test_rmse": 0.8359889881601615,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_svr_dm": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 1.0038984885987752,
+      "test_r2": 0.8112574603897994,
+      "recorded_test_rmse": 1.0038984885987752,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    },
+    "r2_svr_m2v": {
+      "ref_max_abs_diff": 4.440892098500626e-16,
+      "test_rmse": 1.055595414786799,
+      "test_r2": 0.791317907044019,
+      "recorded_test_rmse": 1.055595414786799,
+      "ref_match": true,
+      "test_metric_match": true,
+      "status": "PASS"
+    }
+  },
+  "all_pass": false
+}

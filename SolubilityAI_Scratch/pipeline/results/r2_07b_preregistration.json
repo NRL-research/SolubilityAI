@@ -1,0 +1,17 @@
+{
+  "purpose": "bug-fix replacements for the ErG models (non-deterministic featurization)",
+  "configs": [
+    "r2_lgbm_d_av_erg2",
+    "r2_lgbm_desc_mordred_avalon_erg2",
+    "r2_blend_nnls_ergfix"
+  ],
+  "cv_rmse_indomain": {
+    "r2_lgbm_d_av_erg2": 0.929565321307103,
+    "r2_lgbm_desc_mordred_avalon_erg2": 0.9238021945960344,
+    "r2_blend_nnls_ergfix": 0.8830832251162652
+  },
+  "candidate": "r2_blend_nnls_ergfix",
+  "reference": "blend_nnls",
+  "primary_test": "one-sided paired cluster bootstrap on in-domain test RMSE, 2000 resamples, seed 8, alpha 0.05",
+  "note": "does not replace the pre-registered round-2 verdict"
+}

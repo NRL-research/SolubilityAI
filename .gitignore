@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+desktop.ini
+# rebuilt by SolubilityAI_Scratch/pipeline/reassemble_large_files.py from its .partNN files
+SolubilityAI_Scratch/pipeline/data/07b_features_mordred.npz
+# run logs written when the De Novo scripts are re-run
+SolubilityAI_Scratch/pipeline/logs/*
+!SolubilityAI_Scratch/pipeline/logs/.gitkeep

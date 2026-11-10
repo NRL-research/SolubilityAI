@@ -1,0 +1,41 @@
+{
+  "dataset": "/home/claude/work/data/v1_sc_filtered/aqsoldb_sc_filtered.csv",
+  "n_molecules": 9872,
+  "n_acyclic_empty_scaffold": 2940,
+  "pct_acyclic": 29.78,
+  "n_distinct_scaffold_strings": 2026,
+  "seed": 42,
+  "test_fraction": 0.2,
+  "buggy_notebook_cell37": {
+    "n_train": 7897,
+    "n_test": 1975,
+    "test_fraction_actual": 0.2001,
+    "acyclic_in_train": 2940,
+    "acyclic_in_test": 0,
+    "pct_of_test_that_is_acyclic": 0.0,
+    "pct_of_all_acyclic_in_test": 0.0,
+    "test_logs_mean": -3.2518,
+    "test_logs_std": 2.2343,
+    "train_logs_mean": -2.791
+  },
+  "fixed": {
+    "n_train": 7898,
+    "n_test": 1974,
+    "test_fraction_actual": 0.2,
+    "acyclic_in_train": 2319,
+    "acyclic_in_test": 621,
+    "pct_of_test_that_is_acyclic": 31.46,
+    "pct_of_all_acyclic_in_test": 21.12,
+    "test_logs_mean": -2.9766,
+    "test_logs_std": 2.5047,
+    "train_logs_mean": -2.8599
+  },
+  "largest_scaffold_groups": {
+    "<EMPTY / acyclic>": 2940,
+    "c1ccccc1": 1739,
+    "c1ccc(-c2ccccc2)cc1": 216,
+    "c1ccc2ccccc2c1": 149,
+    "c1ccc(Oc2ccccc2)cc1": 138,
+    "C1CCCCC1": 117
+  }
+}

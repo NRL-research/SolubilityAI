@@ -1,0 +1,738 @@
+{
+  "model": "lightgbm[mordred]",
+  "n": 7898,
+  "pooled_oof_rmse": 1.0135456899781137,
+  "pooled_oof_mae": 0.69606571750783,
+  "oof_r2": 0.8128264332263241,
+  "mean_signed_error": 0.02340358564430673,
+  "by_logS_decile": [
+    {
+      "Solubility": "d1 [-13.2,-6.3]",
+      "n": 790.0,
+      "rmse": 1.6208540317,
+      "mae": 1.1407970122,
+      "bias": 0.9004439998,
+      "share_of_total_sq_error": 0.2558062262
+    },
+    {
+      "Solubility": "d2 [-6.3,-4.7]",
+      "n": 790.0,
+      "rmse": 1.1810177431,
+      "mae": 0.8851065024,
+      "bias": 0.4664071378,
+      "share_of_total_sq_error": 0.1358113744
+    },
+    {
+      "Solubility": "d10 [0.1,1.9]",
+      "n": 790.0,
+      "rmse": 1.0922273548,
+      "mae": 0.7319722864,
+      "bias": -0.6653783199,
+      "share_of_total_sq_error": 0.1161580728
+    },
+    {
+      "Solubility": "d3 [-4.7,-3.8]",
+      "n": 790.0,
+      "rmse": 0.9537528856,
+      "mae": 0.6847929732,
+      "bias": 0.2050740938,
+      "share_of_total_sq_error": 0.08857171
+    },
+    {
+      "Solubility": "d9 [-0.9,0.1]",
+      "n": 790.0,
+      "rmse": 0.9299326505,
+      "mae": 0.6156559462,
+      "bias": -0.4176120871,
+      "share_of_total_sq_error": 0.0842027532
+    },
+    {
+      "Solubility": "d4 [-3.8,-3.1]",
+      "n": 789.0,
+      "rmse": 0.8664943463,
+      "mae": 0.6326585625,
+      "bias": 0.0799741709,
+      "share_of_total_sq_error": 0.073013754
+    },
+    {
+      "Solubility": "d8 [-1.5,-0.9]",
+      "n": 790.0,
+      "rmse": 0.826648736,
+      "mae": 0.5720751799,
+      "bias": -0.2794577782,
+      "share_of_total_sq_error": 0.0665373211
+    },
+    {
+      "Solubility": "d5 [-3.1,-2.6]",
+      "n": 790.0,
+      "rmse": 0.8241877078,
+      "mae": 0.6188572591,
+      "bias": 0.1110917893,
+      "share_of_total_sq_error": 0.0661417324
+    },
+    {
+      "Solubility": "d7 [-2.1,-1.5]",
+      "n": 789.0,
+      "rmse": 0.7722902739,
+      "mae": 0.5430448432,
+      "bias": -0.1379505324,
+      "share_of_total_sq_error": 0.0580008479
+    },
+    {
+      "Solubility": "d6 [-2.6,-2.1]",
+      "n": 790.0,
+      "rmse": 0.7567195695,
+      "mae": 0.5354226506,
+      "bias": -0.028689255,
+      "share_of_total_sq_error": 0.0557562081
+    }
+  ],
+  "by_molecular_weight": [
+    {
+      "mw": "500-900",
+      "n": 413.0,
+      "rmse": 1.4501025094,
+      "mae": 1.0358610139,
+      "bias": -0.0229736724,
+      "share_of_total_sq_error": 0.1070394005
+    },
+    {
+      "mw": ">900",
+      "n": 110.0,
+      "rmse": 1.2843917395,
+      "mae": 0.9061467058,
+      "bias": 0.0855833859,
+      "share_of_total_sq_error": 0.0223657724
+    },
+    {
+      "mw": "350-500",
+      "n": 924.0,
+      "rmse": 1.2803494423,
+      "mae": 0.9349216147,
+      "bias": 0.0657277136,
+      "share_of_total_sq_error": 0.186691787
+    },
+    {
+      "mw": "250-350",
+      "n": 1822.0,
+      "rmse": 1.0534785929,
+      "mae": 0.7640322306,
+      "bias": 0.0013380824,
+      "share_of_total_sq_error": 0.2492275286
+    },
+    {
+      "mw": "150-250",
+      "n": 3060.0,
+      "rmse": 0.9076389251,
+      "mae": 0.6303551207,
+      "bias": 0.0394742886,
+      "share_of_total_sq_error": 0.3107018651
+    },
+    {
+      "mw": "<150",
+      "n": 1569.0,
+      "rmse": 0.8006728674,
+      "mae": 0.5004584672,
+      "bias": 0.0006078757,
+      "share_of_total_sq_error": 0.1239736464
+    }
+  ],
+  "by_salt_or_mixture": [
+    {
+      "is_mixture_or_salt": true,
+      "n": 882.0,
+      "rmse": 1.5266202373,
+      "mae": 1.0615642304,
+      "bias": 0.0023480825,
+      "share_of_total_sq_error": 0.2533534507
+    },
+    {
+      "is_mixture_or_salt": false,
+      "n": 7016.0,
+      "rmse": 0.9292116302,
+      "mae": 0.6501179284,
+      "bias": 0.0260505289,
+      "share_of_total_sq_error": 0.7466465493
+    }
+  ],
+  "by_charged": [
+    {
+      "is_charged": true,
+      "n": 1253.0,
+      "rmse": 1.2893205146,
+      "mae": 0.8893262748,
+      "bias": 0.0593793014,
+      "share_of_total_sq_error": 0.2567255334
+    },
+    {
+      "is_charged": false,
+      "n": 6645.0,
+      "rmse": 0.9526404326,
+      "mae": 0.6596239601,
+      "bias": 0.0166199029,
+      "share_of_total_sq_error": 0.7432744666
+    }
+  ],
+  "by_acyclic": [
+    {
+      "is_acyclic": true,
+      "n": 2319.0,
+      "rmse": 1.1242046886,
+      "mae": 0.6963133506,
+      "bias": 0.0002111726,
+      "share_of_total_sq_error": 0.361233269
+    },
+    {
+      "is_acyclic": false,
+      "n": 5579.0,
+      "rmse": 0.9638176153,
+      "mae": 0.6959627849,
+      "bias": 0.0330438807,
+      "share_of_total_sq_error": 0.638766731
+    }
+  ],
+  "by_inorganic_element": [
+    {
+      "has_metal_or_exotic": true,
+      "n": 751.0,
+      "rmse": 1.7129345718,
+      "mae": 1.1847856393,
+      "bias": 0.0857508166,
+      "share_of_total_sq_error": 0.2715924512
+    },
+    {
+      "has_metal_or_exotic": false,
+      "n": 7147.0,
+      "rmse": 0.9093419443,
+      "mae": 0.6447114904,
+      "bias": 0.0168521976,
+      "share_of_total_sq_error": 0.7284075488
+    }
+  ],
+  "by_scaffold_group_size": [
+    {
+      "scaffold_group_size": "singleton",
+      "n": 3447.0,
+      "rmse": 1.1166581849,
+      "mae": 0.7313929583,
+      "bias": -0.0058635872,
+      "share_of_total_sq_error": 0.5297585793
+    },
+    {
+      "scaffold_group_size": "6-20",
+      "n": 745.0,
+      "rmse": 1.0895958936,
+      "mae": 0.7717172794,
+      "bias": 0.0987554245,
+      "share_of_total_sq_error": 0.1090142815
+    },
+    {
+      "scaffold_group_size": "2",
+      "n": 416.0,
+      "rmse": 1.0556167362,
+      "mae": 0.7821750044,
+      "bias": 0.0567882621,
+      "share_of_total_sq_error": 0.0571349791
+    },
+    {
+      "scaffold_group_size": "21-100",
+      "n": 527.0,
+      "rmse": 1.0012099168,
+      "mae": 0.6925043415,
+      "bias": 0.039766733,
+      "share_of_total_sq_error": 0.0651114113
+    },
+    {
+      "scaffold_group_size": "3-5",
+      "n": 557.0,
+      "rmse": 0.8693881539,
+      "mae": 0.6504097093,
+      "bias": -0.0254435777,
+      "share_of_total_sq_error": 0.0518894228
+    },
+    {
+      "scaffold_group_size": ">100",
+      "n": 2206.0,
+      "rmse": 0.8295182941,
+      "mae": 0.6114566359,
+      "bias": 0.0458166822,
+      "share_of_total_sq_error": 0.187091326
+    }
+  ],
+  "by_clogp": [
+    {
+      "logp": "<-2",
+      "n": 514.0,
+      "rmse": 1.3485108504,
+      "mae": 0.8612039489,
+      "bias": -0.0190552471,
+      "share_of_total_sq_error": 0.1152041749
+    },
+    {
+      "logp": "-2-0",
+      "n": 804.0,
+      "rmse": 1.1980543316,
+      "mae": 0.7637690687,
+      "bias": -0.0174761696,
+      "share_of_total_sq_error": 0.1422346094
+    },
+    {
+      "logp": ">6",
+      "n": 533.0,
+      "rmse": 1.1755471366,
+      "mae": 0.8511674775,
+      "bias": 0.0522202057,
+      "share_of_total_sq_error": 0.0907827874
+    },
+    {
+      "logp": "4-6",
+      "n": 848.0,
+      "rmse": 1.0983461757,
+      "mae": 0.8266998922,
+      "bias": 0.0148961076,
+      "share_of_total_sq_error": 0.1260870677
+    },
+    {
+      "logp": "2-4",
+      "n": 2496.0,
+      "rmse": 0.9408087903,
+      "mae": 0.6629376214,
+      "bias": 0.022352786,
+      "share_of_total_sq_error": 0.2722974174
+    },
+    {
+      "logp": "0-2",
+      "n": 2703.0,
+      "rmse": 0.8721214898,
+      "mae": 0.6035485752,
+      "bias": 0.0415941302,
+      "share_of_total_sq_error": 0.2533939433
+    }
+  ],
+  "worst_30": [
+    {
+      "Name": "RHENIUM",
+      "canonical_smiles": "[Re]",
+      "Solubility": -0.4755079565,
+      "pred": -8.9062937919,
+      "error": -8.4307858354,
+      "mw": 186.207,
+      "logp": -0.0025,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "sodium 4-hydroxybenzene-1-sulfonate",
+      "canonical_smiles": "O=S(=O)([O-])c1ccc(O)cc1.[Na+]",
+      "Solubility": -8.3631893131,
+      "pred": -0.0372014503,
+      "error": 8.3259878628,
+      "mw": 196.159,
+      "logp": -2.6997,
+      "n_frags": 2,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 1,
+      "scaffold_group_size": 1739
+    },
+    {
+      "Name": "2-ethylhexanoic acid, zirconium salt",
+      "canonical_smiles": "CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].[Zr+2]",
+      "Solubility": -8.7020121255,
+      "pred": -1.7409149945,
+      "error": 6.961097131,
+      "mw": 377.636,
+      "logp": 1.9029,
+      "n_frags": 3,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "tris(2-[bis(2-hydroxyethyl)amino]ethan-1-ol); 6-({bis[(5-carboxypentyl)amino]-1,3,5-triazin-2-yl}amino)hexanoic acid",
+      "canonical_smiles": "O=C(O)CCCCCNc1nc(NCCCCCC(=O)O)nc(NCCCCCC(=O)O)n1.OCCN(CCO)CCO.OCCN(CCO)CCO.OCCN(CCO)CCO",
+      "Solubility": -6.6832011337,
+      "pred": 0.1856146143,
+      "error": 6.868815748,
+      "mw": 916.125,
+      "logp": -2.1618,
+      "n_frags": 4,
+      "is_charged": false,
+      "has_metal_or_exotic": false,
+      "n_rings": 1,
+      "scaffold_group_size": 44
+    },
+    {
+      "Name": "1H-Pyrazole-3-carboxylic acid, 4,5-dihydro-5-oxo-1-(4-sulfophenyl)-4-[(4-sulfophenyl)azo]-, reaction products with guanidine hydrochloride N,N'-bis(mixed Ph, tolyl and xylyl) derivs.",
+      "canonical_smiles": "N=C(N)N.O=C(O)C1=NN(c2ccc(S(=O)(=O)O)cc2)C(=O)C1N=Nc1ccc(S(=O)(=O)O)cc1.[Cl-].[H+]",
+      "Solubility": -7.7512467617,
+      "pred": -1.3158020863,
+      "error": 6.4354446754,
+      "mw": 563.958,
+      "logp": -2.92523,
+      "n_frags": 4,
+      "is_charged": true,
+      "has_metal_or_exotic": false,
+      "n_rings": 3,
+      "scaffold_group_size": 10
+    },
+    {
+      "Name": "dialuminium(3+) ion trisulfate",
+      "canonical_smiles": "O.O.O.O.O.O.O.O.O.O=S(=O)([O-])[O-].O=S(=O)([O-])[O-].O=S(=O)([O-])[O-].[Al+3].[Al+3]",
+      "Solubility": -7.4985586512,
+      "pred": -1.49469271,
+      "error": 6.0038659412,
+      "mw": 504.288,
+      "logp": -12.1979,
+      "n_frags": 14,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "zinc(2+) ion bis(2-ethylhexanoate)",
+      "canonical_smiles": "CCCCC(CC)C(=O)[O-].CCCCC(CC)C(=O)[O-].[Zn+2]",
+      "Solubility": 0.4554354087,
+      "pred": -5.3803897957,
+      "error": -5.8358252044,
+      "mw": 351.802,
+      "logp": 1.9029,
+      "n_frags": 3,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "Fatty acids, C5-9, hexaesters with dipentaerythritol",
+      "canonical_smiles": "CCCCC(=O)OCC(CO)(CO)COCC(CO)(CO)CO",
+      "Solubility": -6.8304564999,
+      "pred": -1.0389445152,
+      "error": 5.7915119847,
+      "mw": 338.397,
+      "logp": -1.3293,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": false,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "aluminium(3+) ion dichloride hydroxide",
+      "canonical_smiles": "[Al+3].[Cl-].[Cl-].[Cl-]",
+      "Solubility": -6.5686612071,
+      "pred": -0.8445312879,
+      "error": 5.7241299192,
+      "mw": 133.341,
+      "logp": -9.3688,
+      "n_frags": 4,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "dechlorane plus",
+      "canonical_smiles": "ClC1=C(Cl)C2(Cl)C3CCC4C(CCC3C1(Cl)C2(Cl)Cl)C1(Cl)C(Cl)=C(Cl)C4(Cl)C1(Cl)Cl",
+      "Solubility": -13.1719,
+      "pred": -7.6483379331,
+      "error": 5.5235620669,
+      "mw": 653.73,
+      "logp": 9.7162,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": false,
+      "n_rings": 5,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "2,5,7,10,11,14-hexaoxa-1,6-distibabicyclo[4.4.4]tetradecane",
+      "canonical_smiles": "C1C[O][Sb]2[O]CC[O][Sb]([O]1)[O]CC[O]2",
+      "Solubility": -9.0249738719,
+      "pred": -3.5517570512,
+      "error": 5.4732168207,
+      "mw": 423.676,
+      "logp": -0.917,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 3,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "oxotitanium; sulfuric acid",
+      "canonical_smiles": "O=S(=O)(O)O.[O]=[Ti]",
+      "Solubility": -5.9613942775,
+      "pred": -0.5254212409,
+      "error": 5.4359730366,
+      "mw": 161.945,
+      "logp": -0.7741,
+      "n_frags": 2,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "Propyzamide  ",
+      "canonical_smiles": "CCC(N)=O",
+      "Solubility": -4.23,
+      "pred": 0.997338894,
+      "error": 5.227338894,
+      "mw": 73.095,
+      "logp": -0.1183,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": false,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "sodium; methanolate; 2-methylbenzene-1,3-diamine; methyl 2,3,4,5-tetrachloro-6-cyanobenzoate",
+      "canonical_smiles": "COC(=O)c1c(Cl)c(Cl)c(Cl)c(Cl)c1C#N.C[O-].Cc1c(N)cccc1N.[Na+]",
+      "Solubility": -7.1716670448,
+      "pred": -1.9979718438,
+      "error": 5.173695201,
+      "mw": 475.135,
+      "logp": 1.0984,
+      "n_frags": 4,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 2,
+      "scaffold_group_size": 7
+    },
+    {
+      "Name": "potassium 16-methylheptadecanoate",
+      "canonical_smiles": "CC(C)CCCCCCCCCCCCCCC(=O)[O-].[K+]",
+      "Solubility": -8.1469015236,
+      "pred": -3.1287298848,
+      "error": 5.0181716388,
+      "mw": 322.574,
+      "logp": 1.8577,
+      "n_frags": 2,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "sulfanylidenestrontium",
+      "canonical_smiles": "[S]=[Sr]",
+      "Solubility": 0.0036602887,
+      "pred": -4.9458567438,
+      "error": -4.9495170325,
+      "mw": 119.687,
+      "logp": 0.2674,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "hydrogen fluoride",
+      "canonical_smiles": "[F-].[H+]",
+      "Solubility": 1.6988,
+      "pred": -3.237594049,
+      "error": -4.936394049,
+      "mw": 20.006,
+      "logp": -2.8835,
+      "n_frags": 2,
+      "is_charged": true,
+      "has_metal_or_exotic": false,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "procion blue mx-r",
+      "canonical_smiles": "Nc1c(S(=O)(=O)O)cc(Nc2ccc(S(=O)(=O)O)c(Nc3nc(Cl)nc(Cl)n3)c2)c2c1C(=O)c1ccccc1C2=O",
+      "Solubility": 0.1956,
+      "pred": -4.7306046495,
+      "error": -4.9262046495,
+      "mw": 637.439,
+      "logp": 3.5166,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": false,
+      "n_rings": 5,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "calcium bis(metaphosphate)",
+      "canonical_smiles": "O=[PH]([O-])O.O=[PH]([O-])O.[Ca+2]",
+      "Solubility": -5.253149755,
+      "pred": -0.379697735,
+      "error": 4.87345202,
+      "mw": 202.052,
+      "logp": -2.9234,
+      "n_frags": 3,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "2-[(1-amino-4-hydroxy-9,10-dioxo-9,10-dihydroanthracen-2-yl)oxy]ethyl ethyl carbonate",
+      "canonical_smiles": "CCOC(=O)OCCOc1cc(O)c2c(c1N)C(=O)c1ccccc1C2=O",
+      "Solubility": -9.2195295624,
+      "pred": -4.379493755,
+      "error": 4.8400358074,
+      "mw": 371.345,
+      "logp": 2.3017,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": false,
+      "n_rings": 3,
+      "scaffold_group_size": 29
+    },
+    {
+      "Name": "molybdenum",
+      "canonical_smiles": "[Mo]",
+      "Solubility": -4.2038484637,
+      "pred": -9.0336060608,
+      "error": -4.8297575971,
+      "mw": 95.94,
+      "logp": -0.0025,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "oxotin",
+      "canonical_smiles": "[O]=[Sn]",
+      "Solubility": -8.8283698405,
+      "pred": -4.0102430139,
+      "error": 4.8181268266,
+      "mw": 134.71,
+      "logp": -0.4996,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "chromium",
+      "canonical_smiles": "[Cr]",
+      "Solubility": -10.0169999307,
+      "pred": -5.2650811895,
+      "error": 4.7519187412,
+      "mw": 51.996,
+      "logp": -0.0025,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "1,1'-[iminobis(ethyleneiminoethylene)]bis[3-(octadecenyl)pyrrolidine-2,5-dione]",
+      "canonical_smiles": "CCCCCCCCCCCCCCCCCCC1CC(=O)N(CCNCCNCCNCCN2C(=O)CC(CCCCCCCCCCCCCCCCCC)C2=O)C1=O",
+      "Solubility": -10.2347171749,
+      "pred": -5.4860177986,
+      "error": 4.7486993763,
+      "mw": 858.395,
+      "logp": 11.8086,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": false,
+      "n_rings": 2,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "bis(pyridin-1-ium) [(oxidodioxochromio)oxy]chromiumoylolate",
+      "canonical_smiles": "[O]=[Cr](=[O])([OH])[O][Cr](=[O])(=[O])[OH].c1ccncc1.c1ccncc1",
+      "Solubility": 0.3990871294,
+      "pred": -4.3321819141,
+      "error": -4.7312690435,
+      "mw": 376.205,
+      "logp": 0.5006,
+      "n_frags": 3,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 2,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "dioxodiarsoxane",
+      "canonical_smiles": "[As+3].[As+3].[O-2].[O-2].[O-2]",
+      "Solubility": -1.0458962962,
+      "pred": -5.756390568,
+      "error": -4.7104942718,
+      "mw": 197.841,
+      "logp": -1.118,
+      "n_frags": 5,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "1,1,3,3-tetramethylbutyl hydroperoxide",
+      "canonical_smiles": "CCOC(=O)/C(=N/Nc1ccc([N+](=O)[O-])cc1)C(=O)c1nn2c(nc(=O)c3ccccc32)s1",
+      "Solubility": -2.2216330999,
+      "pred": -6.8334872218,
+      "error": -4.6118541219,
+      "mw": 466.435,
+      "logp": 2.4263,
+      "n_frags": 1,
+      "is_charged": true,
+      "has_metal_or_exotic": false,
+      "n_rings": 4,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "Ruthenium(3+) heptaacetate",
+      "canonical_smiles": "CC(=O)[O-].CC(=O)[O-].CC(=O)[O-].CC(=O)[O-].CC(=O)[O-].CC(=O)[O-].CC(=O)[O-].[Ru+3].[Ru+3].[Ru+3]",
+      "Solubility": -0.0356831695,
+      "pred": -4.5507520414,
+      "error": -4.5150688719,
+      "mw": 716.518,
+      "logp": -8.7141,
+      "n_frags": 10,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "[tris(isopropenyloxy)vinyl]silane",
+      "canonical_smiles": "C=C[Si](OC(=C)C)(OC(=C)C)OC(=C)C",
+      "Solubility": 0.6452233386,
+      "pred": -3.8457865747,
+      "error": -4.4910099133,
+      "mw": 226.348,
+      "logp": 3.3011,
+      "n_frags": 1,
+      "is_charged": false,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    },
+    {
+      "Name": "palladium (II) di(4-oxopent-2-en-2-oate)",
+      "canonical_smiles": "CC(=O)[CH-]C(C)=O.CC(=O)[CH-]C(C)=O.[Pd+2]",
+      "Solubility": -7.4384610967,
+      "pred": -2.9508327758,
+      "error": 4.4876283209,
+      "mw": 304.638,
+      "logp": 0.73488,
+      "n_frags": 3,
+      "is_charged": true,
+      "has_metal_or_exotic": true,
+      "n_rings": 0,
+      "scaffold_group_size": 1
+    }
+  ],
+  "share_of_sq_error_in_worst_1pct": 0.2043609397931777,
+  "share_of_sq_error_in_worst_5pct": 0.47737340236225423,
+  "share_of_sq_error_in_worst_10pct": 0.6366701769407145,
+  "share_of_sq_error_in_worst_25pct": 0.8515798541185566
+}

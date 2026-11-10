@@ -1,0 +1,11 @@
+config,folder,rmse_from_saved,rmse_originally_recorded,max_abs_diff_vs_original,seconds
+catboost[rdkit_full_eng],catboost_rdkit_full_eng,0.9962788078005439,0.9962788078005439,3.552713678800501e-15,16.1
+catboost_solo[solubility_ai],catboost_solo_solubility_ai,1.0833951669211934,1.0833951669211934,1.7763568394002505e-15,3.5
+extra_trees[rdkit_descriptors],extra_trees_rdkit_descriptors,1.0519031689861191,1.051903168986119,3.552713678800501e-15,25.7
+gatv2[graph+5desc],gatv2_graph_plus_5desc,1.2009483627000352,1.2009483608009408,9.5367431640625e-07,7.3
+hist_gb[mordred],hist_gb_mordred,0.9774919560596412,0.9774919560596412,0.0,211.5
+lightgbm[mordred],lightgbm_mordred,0.9609496681294424,0.9609496681294424,1.7763568394002505e-15,218.2
+lightgbm[rdkit_descriptors],lightgbm_rdkit_descriptors,0.9961137231175482,0.9961137231175482,1.7763568394002505e-15,16.5
+lightgbm[solubility_ai],lightgbm_solubility_ai,1.0906778674385844,1.0906778674385844,3.552713678800501e-15,4.1
+xgboost_branch[solubility_ai],xgboost_branch_solubility_ai,1.104329087668627,1.1043290959380199,1.9073486328125e-06,3.6
+xgboost[mordred],xgboost_mordred,0.9702268059271039,0.9702268087664534,1.9073486328125e-06,218.7

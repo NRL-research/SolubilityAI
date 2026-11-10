@@ -1,0 +1,62 @@
+{
+  "name": "knn_morganbits_k5",
+  "family": "knn",
+  "feature_set": "morgan_bits_r2_2048",
+  "params": {
+    "k": 5
+  },
+  "seed": 42,
+  "desc_names": null,
+  "input": "SMILES string(s)",
+  "output": "predicted LogS (log10 of solubility in mol/L)",
+  "trained_on": "data/06_train.csv (n=7365), dataset version data/04_aqsoldb_curated.csv",
+  "cv": {
+    "per_fold": [
+      {
+        "rmse": 1.7508750792750543,
+        "mae": 1.3031833737035952,
+        "r2": 0.4226665897951586
+      },
+      {
+        "rmse": 1.6498631281903013,
+        "mae": 1.2023913743942012,
+        "r2": 0.5175850703698015
+      },
+      {
+        "rmse": 1.7697316520766115,
+        "mae": 1.3065320507973366,
+        "r2": 0.48412821138651807
+      },
+      {
+        "rmse": 1.8196502357713409,
+        "mae": 1.3453910756318979,
+        "r2": 0.41158826767293255
+      },
+      {
+        "rmse": 1.603510841509235,
+        "mae": 1.1971665364457589,
+        "r2": 0.5305572781959593
+      }
+    ],
+    "pooled": {
+      "rmse": 1.7205970818066536,
+      "mae": 1.2709472768771455,
+      "r2": 0.47379538616597594
+    }
+  },
+  "model_files": [
+    "model.joblib"
+  ],
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "sklearn": "1.8.0",
+    "rdkit": "2026.03.6",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.2.0",
+    "catboost": "1.2.10"
+  },
+  "training_script": "scripts/04_cv_sweep.py",
+  "note": "Tanimoto (Jaccard) kNN"
+}

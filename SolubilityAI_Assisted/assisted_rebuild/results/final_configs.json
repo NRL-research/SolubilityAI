@@ -1,0 +1,129 @@
+{
+  "single_models": {
+    "catboost[rdkit_full_eng]": {
+      "model_type": "catboost",
+      "feature_set": "rdkit_full_eng",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "catboost_solo[solubility_ai]": {
+      "model_type": "catboost",
+      "feature_set": "solubility_ai",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "extra_trees[rdkit_descriptors]": {
+      "model_type": "extra_trees",
+      "feature_set": "rdkit_descriptors",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "gatv2[graph+5desc]": {
+      "model_type": "gatv2",
+      "feature_set": "graph+5desc",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "hist_gb[mordred]": {
+      "model_type": "hist_gb",
+      "feature_set": "mordred",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "lightgbm[mordred]": {
+      "model_type": "lightgbm",
+      "feature_set": "mordred",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "lightgbm[rdkit_descriptors]": {
+      "model_type": "lightgbm",
+      "feature_set": "rdkit_descriptors",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "lightgbm[solubility_ai]": {
+      "model_type": "lightgbm",
+      "feature_set": "solubility_ai",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "xgboost[mordred]": {
+      "model_type": "xgboost",
+      "feature_set": "mordred",
+      "kwargs": {},
+      "multiseed": true
+    },
+    "xgboost_branch[solubility_ai]": {
+      "model_type": "xgboost",
+      "feature_set": "solubility_ai",
+      "kwargs": {},
+      "multiseed": true
+    }
+  },
+  "blends": {
+    "SolubilityAI_ensemble": {
+      "members": [
+        "gatv2[graph+5desc]",
+        "xgboost_branch[solubility_ai]",
+        "catboost_solo[solubility_ai]"
+      ],
+      "weights": [
+        0.34718621999757565,
+        6.074336013501249e-19,
+        0.6528137800024244
+      ]
+    },
+    "diverse_blend_4": {
+      "members": [
+        "lightgbm[mordred]",
+        "catboost[rdkit_full_eng]",
+        "extra_trees[rdkit_descriptors]",
+        "xgboost_branch[solubility_ai]"
+      ],
+      "weights": [
+        0.5626488967326704,
+        0.41320380474242613,
+        9.78757935074343e-19,
+        0.024147298524903583
+      ]
+    },
+    "diverse_blend_4_plus_gnn": {
+      "members": [
+        "lightgbm[mordred]",
+        "catboost[rdkit_full_eng]",
+        "extra_trees[rdkit_descriptors]",
+        "xgboost_branch[solubility_ai]",
+        "gatv2[graph+5desc]"
+      ],
+      "weights": [
+        0.540532951651761,
+        0.3720904200317944,
+        3.129680591329498e-17,
+        0.0,
+        0.08737662831644466
+      ]
+    },
+    "greedy_blend": {
+      "members": [
+        "lightgbm[mordred]",
+        "catboost[rdkit_full_eng]",
+        "lightgbm[solubility_ai]",
+        "xgboost[mordred]",
+        "gatv2[graph+5desc]",
+        "lightgbm[rdkit_descriptors]",
+        "hist_gb[mordred]"
+      ],
+      "weights": [
+        0.3082933909315545,
+        0.14636733492419712,
+        0.11846370344815026,
+        0.13894533160904957,
+        0.06211717980261717,
+        0.13637561291477193,
+        0.08943744636965954
+      ]
+    }
+  },
+  "note": "Chosen from out-of-fold train+val predictions only; test not yet read."
+}

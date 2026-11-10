@@ -1,0 +1,21 @@
+{
+  "v1": 9217,
+  "ood_metal": 176,
+  "ood_mixture": 139,
+  "v2": 8912,
+  "v2_train": 7108,
+  "v2_test": 1804,
+  "removed_train": 257,
+  "removed_test": 48,
+  "v2_acyclic_frac_train": 0.26575689364096794,
+  "v2_acyclic_frac_test": 0.2710643015521064,
+  "v2_fold_sizes": [
+    1420,
+    1419,
+    1430,
+    1412,
+    1427
+  ],
+  "v2_logS_mean_train": -2.87918725564071,
+  "v2_logS_mean_test": -2.828998249822958
+}

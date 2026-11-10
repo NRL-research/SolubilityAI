@@ -1,0 +1,2 @@
+62934b4ec245716c1e97ca95483434e0b66bfe2efc499f5123e17e6eb0c2331f  /tmp/m2v.pkl
+source: https://raw.githubusercontent.com/samoturk/mol2vec/master/examples/models/model_300dim.pkl (Jaeger et al. 2018, unsupervised word2vec on ZINC/ChEMBL Morgan identifiers r0-r1)

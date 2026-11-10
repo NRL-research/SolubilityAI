@@ -1,0 +1,14 @@
+A,B,A_rmse,B_rmse,A_r2,B_r2,gap_A_minus_B,ci95_low,ci95_high,frac_resamples_B_better,verdict
+greedy_blend,stack_enet@all_usable,0.952,0.9481,0.8555,0.8566,0.0039,-0.0096,0.0175,0.7133,no significant difference
+lightgbm[mordred],stack_enet@all_usable,0.9609,0.9481,0.8527,0.8566,0.0129,-0.0059,0.0316,0.9119,no significant difference
+greedy_blend,stack_enet@all_models,0.952,0.9472,0.8555,0.8569,0.0048,-0.0084,0.0183,0.7563,no significant difference
+lightgbm[mordred],stack_enet@all_models,0.9609,0.9472,0.8527,0.8569,0.0138,-0.0044,0.0319,0.9306,no significant difference
+greedy_blend,stack_ridge@all_usable,0.952,0.9478,0.8555,0.8567,0.0042,-0.0088,0.0174,0.7319,no significant difference
+lightgbm[mordred],stack_ridge@all_usable,0.9609,0.9478,0.8527,0.8567,0.0131,-0.0051,0.0311,0.9227,no significant difference
+lightgbm[mordred],lightgbm_cons_huber_ca[mordred+chem_aware],0.9609,0.9667,0.8527,0.851,-0.0058,-0.0243,0.0123,0.2751,no significant difference
+greedy_blend,lightgbm_cons_huber_ca[mordred+chem_aware],0.952,0.9667,0.8555,0.851,-0.0147,-0.0312,0.0016,0.0371,no significant difference
+lightgbm[mordred],lightgbm_conservative[mordred],0.9609,0.9743,0.8527,0.8486,-0.0134,-0.0289,0.002,0.0432,no significant difference
+lightgbm[mordred],lightgbm_huber[mordred],0.9609,0.9563,0.8527,0.8541,0.0046,-0.0035,0.0124,0.8808,no significant difference
+lightgbm[mordred],lightgbm_cons_huber[mordred],0.9609,0.9768,0.8527,0.8478,-0.0159,-0.0343,0.002,0.0406,no significant difference
+lightgbm_conservative[mordred],lightgbm_cons_huber_ca[mordred+chem_aware],0.9743,0.9667,0.8486,0.851,0.0076,-0.002,0.017,0.9419,no significant difference
+stack_enet@all_models,stack_enet@all_usable,0.9472,0.9481,0.8569,0.8566,-0.0009,-0.004,0.0021,0.2854,no significant difference

@@ -1,0 +1,45 @@
+{
+  "config": "catboost[rdkit_full_eng]",
+  "model_type": "catboost",
+  "library": "CatBoost",
+  "feature_set": "rdkit_full_eng",
+  "n_features": 225,
+  "seeds": [
+    42,
+    101,
+    123
+  ],
+  "save_method": "CatBoostRegressor.save_model(format='cbm')",
+  "file_extension": "cbm",
+  "dataset_version": "v2_sc_filtered_scaffold_fixed",
+  "split_seed": 42,
+  "n_train": 7898,
+  "n_test": 1974,
+  "target": "LogS (log10 aqueous solubility, mol/L)",
+  "fitted_preprocessors": [],
+  "preprocessing_note": "none fitted on training data; featurization is a pure per-molecule function (non-finite -> 0, clip to +/-1e30)",
+  "hyperparameters": {
+    "iterations": 3000,
+    "learning_rate": 0.02,
+    "depth": 8,
+    "l2_leaf_reg": 5,
+    "loss_function": "RMSE",
+    "verbose": 0,
+    "allow_writing_files": false,
+    "random_state": 42
+  },
+  "test_rmse": 0.9962788078005439,
+  "test_mae": 0.682656569674434,
+  "test_r2": 0.8416986075400225,
+  "test_rmse_per_seed": [
+    0.9983567111207028,
+    0.9994448666161239,
+    1.0003645281236389
+  ],
+  "test_rmse_seed_std": 0.000821,
+  "cv_pooled_oof_rmse": 1.0259,
+  "recorded_test_rmse": 0.996278807800544,
+  "max_abs_diff_vs_recorded_predictions": 0.0,
+  "pip": "catboost rdkit",
+  "description": "CatBoost over RDKit descriptors plus 8 engineered solubility-relevant ratios."
+}

@@ -1,0 +1,8 @@
+candidate,kind,split,rmse,mae,r2,weights
+lightgbm[mordred],single_model,test,1.0581037014402166,0.7167441445249219,0.8045369978082274,
+catboost[mordred],single_model,test,1.067236903918345,0.7372967542566305,0.8011480902440027,
+hist_gradient_boosting[rdkit_full+engineered],single_model,test,1.0958562454353677,0.7451875742180235,0.7903401494549727,
+extra_trees[rdkit_descriptors],single_model,test,1.15760768209585,0.8063702543441245,0.7660457720295061,
+unweighted_mean,ensemble,test,1.0564586192189591,0.721708039355806,0.8051443158679397,
+weighted_blend,ensemble,test,1.0436376533738967,0.707252895796986,0.8098450755049529,"{'lightgbm[mordred]': 0.6199078365505374, 'catboost[mordred]': 0.13117937743728852, 'hist_gradient_boosting[rdkit_full+engineered]': 0.24891278601217415, 'extra_trees[rdkit_descriptors]': 7.318364664277155e-19}"
+stacking_ridge,ensemble,test,1.0441635349437466,0.7080613245153259,0.809653391802724,

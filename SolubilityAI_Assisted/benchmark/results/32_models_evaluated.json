@@ -1,0 +1,176 @@
+{
+  "evaluated": [
+    {
+      "model": "catboost_rdkit_full_eng",
+      "config": "catboost[rdkit_full_eng]",
+      "kind": "single",
+      "feature_set": "rdkit_full_eng",
+      "n_seeds": 3,
+      "internal_test_rmse": 0.9962788078005439,
+      "internal_test_r2": 0.8416986075400225,
+      "seconds": 1.9
+    },
+    {
+      "model": "catboost_solo_solubility_ai",
+      "config": "catboost_solo[solubility_ai]",
+      "kind": "single",
+      "feature_set": "solubility_ai",
+      "n_seeds": 3,
+      "internal_test_rmse": 1.0833951669211934,
+      "internal_test_r2": 0.8128039252311859,
+      "seconds": 0.4
+    },
+    {
+      "model": "extra_trees_rdkit_descriptors",
+      "config": "extra_trees[rdkit_descriptors]",
+      "kind": "single",
+      "feature_set": "rdkit_descriptors",
+      "n_seeds": 3,
+      "internal_test_rmse": 1.051903168986119,
+      "internal_test_r2": 0.8235285406177622,
+      "seconds": 3.1
+    },
+    {
+      "model": "gatv2_graph_plus_5desc",
+      "config": "gatv2[graph+5desc]",
+      "kind": "single",
+      "feature_set": "graph+5desc",
+      "n_seeds": 5,
+      "internal_test_rmse": 1.2009483608009408,
+      "internal_test_r2": 0.7699768122882938,
+      "seconds": 3.1
+    },
+    {
+      "model": "hist_gb_mordred",
+      "config": "hist_gb[mordred]",
+      "kind": "single",
+      "feature_set": "mordred",
+      "n_seeds": 3,
+      "internal_test_rmse": 0.9774919560596412,
+      "internal_test_r2": 0.8476125033664386,
+      "seconds": 28.4
+    },
+    {
+      "model": "lightgbm_mordred",
+      "config": "lightgbm[mordred]",
+      "kind": "single",
+      "feature_set": "mordred",
+      "n_seeds": 3,
+      "internal_test_rmse": 0.9609496681294424,
+      "internal_test_r2": 0.8527266273535278,
+      "seconds": 29.6
+    },
+    {
+      "model": "lightgbm_rdkit_descriptors",
+      "config": "lightgbm[rdkit_descriptors]",
+      "kind": "single",
+      "feature_set": "rdkit_descriptors",
+      "n_seeds": 3,
+      "internal_test_rmse": 0.9961137231175482,
+      "internal_test_r2": 0.8417510646832244,
+      "seconds": 2.0
+    },
+    {
+      "model": "lightgbm_solubility_ai",
+      "config": "lightgbm[solubility_ai]",
+      "kind": "single",
+      "feature_set": "solubility_ai",
+      "n_seeds": 3,
+      "internal_test_rmse": 1.0906778674385844,
+      "internal_test_r2": 0.8102787615710257,
+      "seconds": 0.4
+    },
+    {
+      "model": "xgboost_branch_solubility_ai",
+      "config": "xgboost_branch[solubility_ai]",
+      "kind": "single",
+      "feature_set": "solubility_ai",
+      "n_seeds": 3,
+      "internal_test_rmse": 1.1043290959380199,
+      "internal_test_r2": 0.8054998324566048,
+      "seconds": 1.0
+    },
+    {
+      "model": "xgboost_mordred",
+      "config": "xgboost[mordred]",
+      "kind": "single",
+      "feature_set": "mordred",
+      "n_seeds": 3,
+      "internal_test_rmse": 0.9702268087664534,
+      "internal_test_r2": 0.8498693062198148,
+      "seconds": 30.2
+    },
+    {
+      "model": "SolubilityAI_ensemble",
+      "config": "SolubilityAI_ensemble",
+      "kind": "blend",
+      "feature_set": "2 members",
+      "n_seeds": null,
+      "internal_test_rmse": 1.071397337104142,
+      "internal_test_r2": 0.8169270939252634,
+      "seconds": 0.0
+    },
+    {
+      "model": "diverse_blend_4",
+      "config": "diverse_blend_4",
+      "kind": "blend",
+      "feature_set": "3 members",
+      "n_seeds": null,
+      "internal_test_rmse": 0.9548195954640848,
+      "internal_test_r2": 0.8545996014632075,
+      "seconds": 0.0
+    },
+    {
+      "model": "diverse_blend_4_plus_gnn",
+      "config": "diverse_blend_4_plus_gnn",
+      "kind": "blend",
+      "feature_set": "3 members",
+      "n_seeds": null,
+      "internal_test_rmse": 0.9554578018932234,
+      "internal_test_r2": 0.854405163724234,
+      "seconds": 0.0
+    },
+    {
+      "model": "greedy_blend",
+      "config": "greedy_blend",
+      "kind": "blend",
+      "feature_set": "7 members",
+      "n_seeds": null,
+      "internal_test_rmse": 0.9519811919118538,
+      "internal_test_r2": 0.8554627835409971,
+      "seconds": 0.0
+    }
+  ],
+  "skipped": [],
+  "not_saved_so_not_evaluated": {
+    "stack_enet@all_models": "round-3 best; meta-model over 36 base models, never saved",
+    "stack_enet@all_usable": "round-3 CV-selected stack over 33 base models, never saved",
+    "stack_ridge@all_usable": "round-3 stack over 33 base models, never saved",
+    "lightgbm_cons_huber_ca[mordred+chem_aware]": "round-3 best single model by CV, never saved",
+    "lightgbm_huber[mordred]": "round-3 single model, never saved",
+    "lightgbm_huber_d1p0[mordred]": "round-3 single model, never saved",
+    "lightgbm_huber_d4p0[mordred]": "round-3 single model, never saved",
+    "lightgbm_conservative[mordred]": "round-3 single model, never saved",
+    "lightgbm_conservative_ca[mordred+chem_aware]": "round-3 single model, never saved",
+    "lightgbm_cons_huber[mordred]": "round-3 single model, never saved",
+    "lightgbm_very_conservative[mordred]": "round-3 single model, never saved",
+    "lightgbm_mae[mordred]": "round-3 single model, never saved",
+    "catboost_huber[rdkit_full_eng]": "round-3 single model, never saved",
+    "svr_rbf[rdkit_full_eng]": "round-3 single model, never saved",
+    "mlp[rdkit_full_eng]": "round-3 single model, never saved",
+    "elasticnet[mordred]": "round-3 single model, never saved",
+    "knn_tanimoto[solubility_ai]": "round-3 single model, never saved",
+    "lightgbm[mordred+chem_aware]": "round-3 single model, never saved"
+  },
+  "headline_models": [
+    "lightgbm_mordred",
+    "greedy_blend",
+    "diverse_blend_4"
+  ],
+  "sets": {
+    "SC1_consistent": 22,
+    "SC1_repaired": 28,
+    "SC2_tight": 100,
+    "SC2_loose": 32
+  }
+}

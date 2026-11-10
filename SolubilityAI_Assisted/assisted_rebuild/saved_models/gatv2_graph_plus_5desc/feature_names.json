@@ -1,0 +1,10 @@
+{
+  "note": "GATv2 consumes a molecular graph, not a flat feature vector",
+  "global_descriptors_in_order": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "NumHDonors",
+    "NumHAcceptors"
+  ]
+}

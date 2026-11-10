@@ -1,0 +1,18 @@
+{
+  "identical_model_pairs": [],
+  "n_distinct_predictions_per_model_min": 156,
+  "blend_nnls_equals_weighted_sum_of_components_maxabs": 1.7763568394002505e-15,
+  "blend_nnls_family_equals_weighted_sum_of_components_maxabs": 8.881784197001252e-16,
+  "r2_blend_nnls_ergfix_equals_weighted_sum_of_components_maxabs": 1.7763568394002505e-15,
+  "shared_structures_between_sets_(identical_prediction_expected)": {
+    "SC1&SC2_tight": 4,
+    "SC1&SC2_loose": 3,
+    "SC2_loose&SC2_tight": 0
+  },
+  "sets_have_different_prediction_vectors": {
+    "SC1": -2.9745747156504923,
+    "SC1_as_provided": -2.9745747156504923,
+    "SC2_tight": -3.545163977515602,
+    "SC2_loose": -4.216749852717195
+  }
+}

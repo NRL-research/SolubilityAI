@@ -1,0 +1,11 @@
+{
+ "data/07b_features_mordred.npz": {
+  "sha256": "c2a84a3941f34ed0430808a98263bda77c40d618f79a72475add61ec0db54f85",
+  "bytes": 52074884,
+  "parts": [
+   "data/07b_features_mordred.npz.part00",
+   "data/07b_features_mordred.npz.part01",
+   "data/07b_features_mordred.npz.part02"
+  ]
+ }
+}

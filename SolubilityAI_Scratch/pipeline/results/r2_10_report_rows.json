@@ -1,0 +1,650 @@
+[
+ {
+  "name": "r2_blend_nnls",
+  "fs": "(components)",
+  "cv": 0.8828842790124409,
+  "cvsd": 0.0255220464246529,
+  "cvr2": 0.8593261580105621,
+  "rmse": 0.7930648077,
+  "rci": [
+   0.7196328819000001,
+   0.8766725485
+  ],
+  "mae": 0.5398220215,
+  "r2": 0.8818661455000001,
+  "r2ci": [
+   0.8279820054,
+   0.9166236786
+  ],
+  "d": -0.0056405817,
+  "dci": [
+   -0.0139459925,
+   0.002135862
+  ],
+  "p": 0.0785,
+  "full_rmse": 0.8309400322,
+  "full_r2": 0.8706907602,
+  "why": "Round-1 NNLS method over the enlarged round-1 + round-2 pool."
+ },
+ {
+  "name": "r2_blend_nnls_ergfix",
+  "fs": "(components)",
+  "cv": 0.8830832251162652,
+  "cvsd": 0.0256872966996123,
+  "cvr2": 0.8592627529491483,
+  "rmse": 0.7930791519,
+  "rci": [
+   0.7198866591,
+   0.876439751
+  ],
+  "mae": 0.5397043626,
+  "r2": 0.8818618721,
+  "r2ci": [
+   0.8282280261,
+   0.9166381435000001
+  ],
+  "d": -0.0056262375,
+  "dci": [
+   -0.0136394859,
+   0.002155774
+  ],
+  "p": 0.083,
+  "full_rmse": 0.8308976797000001,
+  "full_r2": 0.8707039415000001,
+  "why": "Bug-fix rebuild of r2_blend_nnls: same method, ErG models replaced by deterministic erg2 retrains."
+ },
+ {
+  "name": "blend_nnls",
+  "fs": "(components)",
+  "cv": 0.8866485563203887,
+  "cvsd": 0.0228729346250325,
+  "cvr2": 0.8581240430089325,
+  "rmse": 0.7987053894,
+  "rci": [
+   0.7234230041,
+   0.8841439966
+  ],
+  "mae": 0.5456796788,
+  "r2": 0.8801797429,
+  "r2ci": [
+   0.826410639,
+   0.9156116156
+  ],
+  "d": 0.0,
+  "dci": [
+   0.0,
+   0.0
+  ],
+  "p": 1.0,
+  "full_rmse": 0.8399279495,
+  "full_r2": 0.8678782675000001,
+  "why": "Round-1 final model (reference)."
+ },
+ {
+  "name": "r2_stack_ridge",
+  "fs": "(components)",
+  "cv": 0.8917839704085759,
+  "cvsd": 0.0249842373111083,
+  "cvr2": 0.856475809867207,
+  "rmse": 0.7984213563,
+  "rci": [
+   0.7229903672,
+   0.8855251452
+  ],
+  "mae": 0.5478966123,
+  "r2": 0.8802649479,
+  "r2ci": [
+   0.8259589325000001,
+   0.9154937512
+  ],
+  "d": -0.00028403310000000003,
+  "dci": [
+   -0.0097524714,
+   0.0097447847
+  ],
+  "p": 0.48350000000000004,
+  "full_rmse": 0.8359889882,
+  "full_r2": 0.8691145690000001,
+  "why": "Learned (unconstrained, regularized) linear stacker over the per-family best models."
+ },
+ {
+  "name": "r2_stack_lgbm_meta",
+  "fs": "(components)",
+  "cv": 0.9138806545520624,
+  "cvsd": 0.0241582274361949,
+  "cvr2": 0.8492751884307991,
+  "rmse": 0.814229017,
+  "rci": [
+   0.7403585026,
+   0.89587435
+  ],
+  "mae": 0.5645559946,
+  "r2": 0.8754768299000001,
+  "r2ci": [
+   0.8213199274,
+   0.9106222419000001
+  ],
+  "d": 0.0155236277,
+  "dci": [
+   -0.0064891434,
+   0.0349812424
+  ],
+  "p": 0.9175000000000001,
+  "full_rmse": 0.8588476457,
+  "full_r2": 0.8618590455,
+  "why": "Non-linear stacker that can weight models differently by molecule size, polarity, aromaticity, salt status and novelty (error analysis: errors depend strongly on these)."
+ },
+ {
+  "name": "r2_lgbm_desc_mordred_avalon_erg2",
+  "fs": "r2:desc+mordred+avalon+erg2",
+  "cv": 0.9238021945960344,
+  "cvsd": 0.0277826509520221,
+  "cvr2": 0.84598473739074,
+  "rmse": 0.8185616800000001,
+  "rci": [
+   0.7449798971,
+   0.8997460478
+  ],
+  "mae": 0.5737679352,
+  "r2": 0.8741480825,
+  "r2ci": [
+   0.8188642608000001,
+   0.9113190366
+  ],
+  "d": 0.0198562907,
+  "dci": [
+   -0.0010852154,
+   0.0413013304
+  ],
+  "p": 0.9715,
+  "full_rmse": 0.8581514564,
+  "full_r2": 0.8620829112,
+  "why": "Bug-fix retrain of r2_lgbm_desc_mordred_avalon_erg with deterministic ErG (erg2)."
+ },
+ {
+  "name": "r2_lgbm_dm_huber",
+  "fs": "desc+mordred",
+  "cv": 0.9240138355690366,
+  "cvsd": 0.0378360671274502,
+  "cvr2": 0.8459141602172839,
+  "rmse": 0.8338228965000001,
+  "rci": [
+   0.7539292785,
+   0.9237640256
+  ],
+  "mae": 0.5860869769,
+  "r2": 0.8694115851,
+  "r2ci": [
+   0.8093895776000001,
+   0.9087451367
+  ],
+  "d": 0.0351175071,
+  "dci": [
+   0.0137358996,
+   0.057478223700000004
+  ],
+  "p": 0.9995,
+  "full_rmse": 0.8702209241000001,
+  "full_r2": 0.8581761611000001,
+  "why": "Error analysis: many top errors are label/structure errors (e.g. propyzamide given as propanamide). A Huber loss caps the influence of large residuals during training."
+ },
+ {
+  "name": "r2_lgbm_desc_mordred_avalon_erg",
+  "fs": "r2:desc+mordred+avalon+erg",
+  "cv": 0.92409347822998,
+  "cvsd": 0.0321291481597976,
+  "cvr2": 0.8458875971190104,
+  "rmse": 0.8218939478,
+  "rci": [
+   0.7449343722,
+   0.9044598905000001
+  ],
+  "mae": 0.5739971054,
+  "r2": 0.8731213403,
+  "r2ci": [
+   0.8176276433,
+   0.9107053730000001
+  ],
+  "d": 0.0231885585,
+  "dci": [
+   0.0032291977000000003,
+   0.043741206000000005
+  ],
+  "p": 0.9875,
+  "full_rmse": 0.8654299816000001,
+  "full_r2": 0.8597334656000001,
+  "why": "Combination of blocks that helped in CV. [REPRODUCIBILITY FAIL: uses non-deterministic ErG; superseded by the *_erg2 retrain]"
+ },
+ {
+  "name": "r2_catboost_dm",
+  "fs": "desc+mordred",
+  "cv": 0.9251941398617304,
+  "cvsd": 0.0431900869180053,
+  "cvr2": 0.8455202606298752,
+  "rmse": 0.8327898391,
+  "rci": [
+   0.7506043611000001,
+   0.9247894513
+  ],
+  "mae": 0.5847268189,
+  "r2": 0.8697349673,
+  "r2ci": [
+   0.8087692431,
+   0.9092437691
+  ],
+  "d": 0.0340844497,
+  "dci": [
+   0.009680207500000001,
+   0.0590141396
+  ],
+  "p": 0.998,
+  "full_rmse": 0.8758199162,
+  "full_r2": 0.8563453041,
+  "why": "CatBoost on the best feature set (round 1 only ran CatBoost on RDKit descriptors)."
+ },
+ {
+  "name": "r2_lgbm_dm_m2v",
+  "fs": "r2:desc+mordred+mol2vec",
+  "cv": 0.9266258734896706,
+  "cvsd": 0.0338463413010397,
+  "cvr2": 0.8450417773345372,
+  "rmse": 0.8343888669,
+  "rci": [
+   0.7568521186,
+   0.9235712004000001
+  ],
+  "mae": 0.5897387037,
+  "r2": 0.8692342470000001,
+  "r2ci": [
+   0.8099053292,
+   0.9081950073
+  ],
+  "d": 0.0356834776,
+  "dci": [
+   0.0113920258,
+   0.0626066795
+  ],
+  "p": 0.999,
+  "full_rmse": 0.8787276812,
+  "full_r2": 0.8553898393,
+  "why": "Pretrained embedding added to the best feature set."
+ },
+ {
+  "name": "r2_lgbm_dm_crip_pack",
+  "fs": "r2:desc+mordred+crippen_types+packing",
+  "cv": 0.9273384244464044,
+  "cvsd": 0.0318559426577944,
+  "cvr2": 0.8448033680987632,
+  "rmse": 0.8351786998,
+  "rci": [
+   0.7581652525,
+   0.9223734411000001
+  ],
+  "mae": 0.5848191948,
+  "r2": 0.8689865640000001,
+  "r2ci": [
+   0.8100521436,
+   0.9081096693
+  ],
+  "d": 0.0364733105,
+  "dci": [
+   0.015332382,
+   0.058476679600000005
+  ],
+  "p": 0.999,
+  "full_rmse": 0.8755454218000001,
+  "full_r2": 0.8564353368000001,
+  "why": "Same additions on top of the best round-1 feature set."
+ },
+ {
+  "name": "r2_lgbm_d_av_erg",
+  "fs": "r2:desc+avalon+erg",
+  "cv": 0.9285126702426864,
+  "cvsd": 0.0227353438667004,
+  "cvr2": 0.8444100826094366,
+  "rmse": 0.8215894842,
+  "rci": [
+   0.7487413845,
+   0.9022673273
+  ],
+  "mae": 0.5666368106,
+  "r2": 0.8732153251,
+  "r2ci": [
+   0.8182733218,
+   0.9104421306
+  ],
+  "d": 0.0228840948,
+  "dci": [
+   -0.004485124,
+   0.0506398536
+  ],
+  "p": 0.9425,
+  "full_rmse": 0.8691040950000001,
+  "full_r2": 0.8585399569000001,
+  "why": "Avalon substructure counts + ErG pharmacophore graph. [REPRODUCIBILITY FAIL: uses non-deterministic ErG; superseded by the *_erg2 retrain]"
+ },
+ {
+  "name": "r2_lgbm_d_av_erg2",
+  "fs": "r2:desc+avalon+erg2",
+  "cv": 0.929565321307103,
+  "cvsd": 0.022908379765738,
+  "cvr2": 0.8440570993129445,
+  "rmse": 0.8218149719000001,
+  "rci": [
+   0.7486152749,
+   0.902140609
+  ],
+  "mae": 0.5679685145,
+  "r2": 0.8731457227,
+  "r2ci": [
+   0.8193842094,
+   0.9105230849
+  ],
+  "d": 0.0231095825,
+  "dci": [
+   -0.0042840457,
+   0.0494982689
+  ],
+  "p": 0.9515,
+  "full_rmse": 0.8715456103,
+  "full_r2": 0.8577440523000001,
+  "why": "Bug-fix retrain of r2_lgbm_d_av_erg with deterministic ErG (erg2)."
+ },
+ {
+  "name": "r2_lgbm_d_ap_tt",
+  "fs": "r2:desc+atompair+torsion",
+  "cv": 0.940255193175012,
+  "cvsd": 0.0349385467686933,
+  "cvr2": 0.8404498330390905,
+  "rmse": 0.8419488423,
+  "rci": [
+   0.7620151418000001,
+   0.9311923027000001
+  ],
+  "mae": 0.583344148,
+  "r2": 0.8668539075,
+  "r2ci": [
+   0.8055796227,
+   0.9068160125
+  ],
+  "d": 0.0432434529,
+  "dci": [
+   0.0150335377,
+   0.07161558900000001
+  ],
+  "p": 0.998,
+  "full_rmse": 0.8861602043000001,
+  "full_r2": 0.8529331877,
+  "why": "Alternative fingerprints (atom-pair, topological torsion) that encode longer-range topology than Morgan."
+ },
+ {
+  "name": "r2_lgbm_d_crip_pack",
+  "fs": "r2:desc+crippen_types+packing",
+  "cv": 0.946061909552466,
+  "cvsd": 0.0364847753736959,
+  "cvr2": 0.8384730859963261,
+  "rmse": 0.8374780930000001,
+  "rci": [
+   0.7593258195,
+   0.9231758880000001
+  ],
+  "mae": 0.5872351311,
+  "r2": 0.8682641651,
+  "r2ci": [
+   0.8097806120000001,
+   0.9074039643
+  ],
+  "d": 0.0387727036,
+  "dci": [
+   0.0155609171,
+   0.0638827
+  ],
+  "p": 0.9995,
+  "full_rmse": 0.8936161758000001,
+  "full_r2": 0.8504479961,
+  "why": "Group-contribution atom types + crystal-packing/melting-point proxies (MP is the missing term of the General Solubility Equation; errors grow with aromatic ring count)."
+ },
+ {
+  "name": "r2_gnn_hybrid_ens3",
+  "fs": "graph+rdkit_desc(quantile-normal)",
+  "cv": 0.9500203776630328,
+  "cvsd": 0.0423230347067014,
+  "cvr2": 0.8371185513646369,
+  "rmse": 0.8878034927,
+  "rci": [
+   0.8028444271,
+   0.9847188074000001
+  ],
+  "mae": 0.6026226668,
+  "r2": 0.8519560323,
+  "r2ci": [
+   0.7841553495,
+   0.8955653637000001
+  ],
+  "d": 0.0890981034,
+  "dci": [
+   0.0557413084,
+   0.12514496860000002
+  ],
+  "p": 1.0,
+  "full_rmse": 0.9194056139000001,
+  "full_r2": 0.8416914044,
+  "why": "Seed averaging: GNNs carry large blend weights and single networks are noisy (one seed, fixed epochs)."
+ },
+ {
+  "name": "r2_gnn_hybrid_ens2",
+  "fs": "graph+rdkit_desc(quantile-normal)",
+  "cv": 0.9586180554693804,
+  "cvsd": 0.042880444584107,
+  "cvr2": 0.8341570590340979,
+  "rmse": 0.901548671,
+  "rci": [
+   0.8125596525000001,
+   0.9994301989000001
+  ],
+  "mae": 0.6106754852,
+  "r2": 0.8473364446,
+  "r2ci": [
+   0.7765835114,
+   0.8922971688
+  ],
+  "d": 0.1028432816,
+  "dci": [
+   0.0671886766,
+   0.1417916014
+  ],
+  "p": 1.0,
+  "full_rmse": 0.9338102139000001,
+  "full_r2": 0.8366920101,
+  "why": "Seed averaging: GNNs carry large blend weights and single networks are noisy (one seed, fixed epochs)."
+ },
+ {
+  "name": "gnn_hybrid_s43",
+  "fs": "graph+rdkit_desc(quantile-normal)",
+  "cv": 0.973509863341114,
+  "cvsd": 0.0480921454068231,
+  "cvr2": 0.8289644086623432,
+  "rmse": 0.9219018649,
+  "rci": [
+   0.8353519257,
+   1.0182991482
+  ],
+  "mae": 0.6292435053000001,
+  "r2": 0.8403656293,
+  "r2ci": [
+   0.7675765916,
+   0.8882282152000001
+  ],
+  "d": 0.1231964755,
+  "dci": [
+   0.0870551504,
+   0.1639939181
+  ],
+  "p": 1.0,
+  "full_rmse": 0.9537716296000001,
+  "full_r2": 0.8296355429000001,
+  "why": "Extra seed for the GNN (member of the seed ensembles)."
+ },
+ {
+  "name": "gnn_hybrid_s44",
+  "fs": "graph+rdkit_desc(quantile-normal)",
+  "cv": 0.9820675017094992,
+  "cvsd": 0.0403878669426451,
+  "cvr2": 0.825944215546799,
+  "rmse": 0.9097579935000001,
+  "rci": [
+   0.8226933404000001,
+   1.0085679273000001
+  ],
+  "mae": 0.6286938642000001,
+  "r2": 0.8445435386,
+  "r2ci": [
+   0.7749105416000001,
+   0.8894941327
+  ],
+  "d": 0.1110526042,
+  "dci": [
+   0.0747030945,
+   0.1466974517
+  ],
+  "p": 1.0,
+  "full_rmse": 0.9429221033,
+  "full_r2": 0.8334894229,
+  "why": "Extra seed for the GNN (member of the seed ensembles)."
+ },
+ {
+  "name": "r2_gnn_mpnn_ens2",
+  "fs": "graph",
+  "cv": 0.9881413352516542,
+  "cvsd": 0.0549290750563371,
+  "cvr2": 0.8237845776999928,
+  "rmse": 0.9095246004,
+  "rci": [
+   0.8210165978,
+   1.0112164853
+  ],
+  "mae": 0.6163068937,
+  "r2": 0.8446232913,
+  "r2ci": [
+   0.7714082442,
+   0.8911155468
+  ],
+  "d": 0.110819211,
+  "dci": [
+   0.0669039111,
+   0.1637087592
+  ],
+  "p": 1.0,
+  "full_rmse": 0.9551032384,
+  "full_r2": 0.8291595020000001,
+  "why": "Seed averaging: GNNs carry large blend weights and single networks are noisy (one seed, fixed epochs)."
+ },
+ {
+  "name": "gnn_mpnn_s43",
+  "fs": "graph",
+  "cv": 1.018783683130881,
+  "cvsd": 0.050451402899268,
+  "cvr2": 0.8126862136338271,
+  "rmse": 0.9551375291,
+  "rci": [
+   0.855088634,
+   1.0772971712
+  ],
+  "mae": 0.646991363,
+  "r2": 0.8286481346,
+  "r2ci": [
+   0.7421241795,
+   0.8807404701
+  ],
+  "d": 0.1564321397,
+  "dci": [
+   0.0964798447,
+   0.2389231137
+  ],
+  "p": 1.0,
+  "full_rmse": 0.9960891697,
+  "full_r2": 0.8141824927,
+  "why": "Extra seed for the GNN (member of the seed ensembles)."
+ },
+ {
+  "name": "r2_svr_dm",
+  "fs": "desc+mordred",
+  "cv": 1.0330729190617234,
+  "cvsd": 0.034733557071835,
+  "cvr2": 0.8073949208334379,
+  "rmse": 0.9565697533,
+  "rci": [
+   0.8610181738,
+   1.0523706303
+  ],
+  "mae": 0.6533881986,
+  "r2": 0.8281338667,
+  "r2ci": [
+   0.7533572561,
+   0.8801752092
+  ],
+  "d": 0.1578643639,
+  "dci": [
+   0.1036954145,
+   0.21909841160000001
+  ],
+  "p": 1.0,
+  "full_rmse": 1.0038984886,
+  "full_r2": 0.8112574604,
+  "why": "SVR on the larger descriptor set (gamma = 1/n_features, the same scaling as round-1 SVR)."
+ },
+ {
+  "name": "r2_svr_m2v",
+  "fs": "r2:mol2vec",
+  "cv": 1.083382537794862,
+  "cvsd": 0.0552495393445117,
+  "cvr2": 0.7881787902988119,
+  "rmse": 0.9724163354,
+  "rci": [
+   0.8812528996000001,
+   1.076885455
+  ],
+  "mae": 0.6815708719,
+  "r2": 0.822392415,
+  "r2ci": [
+   0.7457558029,
+   0.8757540537
+  ],
+  "d": 0.1737109461,
+  "dci": [
+   0.1300655649,
+   0.2218043755
+  ],
+  "p": 1.0,
+  "full_rmse": 1.0555954148,
+  "full_r2": 0.791317907,
+  "why": "Kernel model on the pretrained embedding: a different inductive bias for blending."
+ },
+ {
+  "name": "r2_lgbm_m2v",
+  "fs": "r2:mol2vec",
+  "cv": 1.1122743689864374,
+  "cvsd": 0.0507912407296731,
+  "cvr2": 0.7767303762377101,
+  "rmse": 1.0380976116,
+  "rci": [
+   0.9488982069,
+   1.1342658272
+  ],
+  "mae": 0.7545302802,
+  "r2": 0.7975893306,
+  "r2ci": [
+   0.7102329072,
+   0.8587015935000001
+  ],
+  "d": 0.2393922223,
+  "dci": [
+   0.19515609320000002,
+   0.2870534415
+  ],
+  "p": 1.0,
+  "full_rmse": 1.095279852,
+  "full_r2": 0.7753324284,
+  "why": "Pretrained chemical embedding (mol2vec) alone."
+ }
+]

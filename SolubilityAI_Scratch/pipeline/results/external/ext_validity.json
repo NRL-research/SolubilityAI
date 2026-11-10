@@ -1,0 +1,445 @@
+{
+  "counts": {
+    "SC1": {
+      "rows": 32,
+      "non_numeric": 4,
+      "unparseable": 0,
+      "inchikey_mismatch": 0,
+      "evaluable": 28
+    },
+    "SC1_as_provided": {
+      "rows": 32,
+      "non_numeric": 4,
+      "unparseable": 0,
+      "inchikey_mismatch": 0,
+      "evaluable": 28
+    },
+    "SC2_tight": {
+      "rows": 100,
+      "non_numeric": 0,
+      "unparseable": 0,
+      "inchikey_mismatch": 0,
+      "evaluable": 100
+    },
+    "SC2_loose": {
+      "rows": 32,
+      "non_numeric": 0,
+      "unparseable": 0,
+      "inchikey_mismatch": 0,
+      "evaluable": 32
+    }
+  },
+  "non_numeric_excluded": {
+    "SC1": [
+      {
+        "name": "2- Chloromandelic acid",
+        "logS_exp": "TSTM"
+      },
+      {
+        "name": "Ephedrine",
+        "logS_exp": "TSTM"
+      },
+      {
+        "name": "Marbofloxacin",
+        "logS_exp": "TSTM"
+      },
+      {
+        "name": "Pseudoephedrine",
+        "logS_exp": "TSTM"
+      }
+    ],
+    "SC1_as_provided": [
+      {
+        "name": "2- Chloromandelic acid",
+        "logS_exp": "TSTM"
+      },
+      {
+        "name": "Ephedrine",
+        "logS_exp": "TSTM"
+      },
+      {
+        "name": "Marbofloxacin",
+        "logS_exp": "TSTM"
+      },
+      {
+        "name": "Pseudoephedrine",
+        "logS_exp": "TSTM"
+      }
+    ],
+    "SC2_tight": [],
+    "SC2_loose": []
+  },
+  "units": {
+    "SC1": {
+      "column": "logS0_uM",
+      "min": -7.741174617904467,
+      "median": -3.7260678758180896,
+      "max": -1.874303941302342
+    },
+    "SC1_as_provided": {
+      "column": "logS0_uM",
+      "min": -7.741174617904467,
+      "median": -3.7260678758180896,
+      "max": -1.874303941302342
+    },
+    "SC2_tight": {
+      "column": "logS0",
+      "min": -6.79,
+      "median": -4.07,
+      "max": -1.18
+    },
+    "SC2_loose": {
+      "column": "logS0",
+      "min": -10.4,
+      "median": -5.49,
+      "max": -1.24
+    }
+  },
+  "sc1_fix_rows": {
+    "0": 1,
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 5,
+    "5": 0,
+    "22": 23,
+    "23": 22
+  },
+  "overlap_per_model": {
+    "blend_nnls": {
+      "training_sets": [
+        "v1",
+        "v2"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "blend_nnls_family": {
+      "training_sets": [
+        "v1",
+        "v2"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "r2_blend_nnls_ergfix": {
+      "training_sets": [
+        "v1",
+        "v2"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "ridge_desc": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "knn_morganbits_k5": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "svr_desc": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "mlp_desc": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "lgbm_desc_maccs": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "lgbm_desc_v2": {
+      "training_sets": [
+        "v2"
+      ],
+      "n_train_keys": 14749,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "xgb_desc_morgan_v2": {
+      "training_sets": [
+        "v2"
+      ],
+      "n_train_keys": 14749,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "svr_desc_v2": {
+      "training_sets": [
+        "v2"
+      ],
+      "n_train_keys": 14749,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "gnn_mpnn": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "gnn_hybrid": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "lgbm_mordred": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "lgbm_desc_mordred": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "r2_lgbm_dm_huber": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "r2_lgbm_dm_m2v": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "gnn_hybrid_s43": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "r2_catboost_dm": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "r2_svr_dm": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "gnn_hybrid_s44": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "gnn_mpnn_s43": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "r2_lgbm_d_av_erg2": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    },
+    "r2_lgbm_desc_mordred_avalon_erg2": {
+      "training_sets": [
+        "v1"
+      ],
+      "n_train_keys": 15348,
+      "SC1": [],
+      "SC1_as_provided": [],
+      "SC2_tight": [],
+      "SC2_loose": []
+    }
+  },
+  "any_overlap": {
+    "blend_nnls": false,
+    "blend_nnls_family": false,
+    "r2_blend_nnls_ergfix": false,
+    "ridge_desc": false,
+    "knn_morganbits_k5": false,
+    "svr_desc": false,
+    "mlp_desc": false,
+    "lgbm_desc_maccs": false,
+    "lgbm_desc_v2": false,
+    "xgb_desc_morgan_v2": false,
+    "svr_desc_v2": false,
+    "gnn_mpnn": false,
+    "gnn_hybrid": false,
+    "lgbm_mordred": false,
+    "lgbm_desc_mordred": false,
+    "r2_lgbm_dm_huber": false,
+    "r2_lgbm_dm_m2v": false,
+    "gnn_hybrid_s43": false,
+    "r2_catboost_dm": false,
+    "r2_svr_dm": false,
+    "gnn_hybrid_s44": false,
+    "gnn_mpnn_s43": false,
+    "r2_lgbm_d_av_erg2": false,
+    "r2_lgbm_desc_mordred_avalon_erg2": false
+  },
+  "overlap_with_test_set": {
+    "SC1": [],
+    "SC1_as_provided": [],
+    "SC2_tight": [],
+    "SC2_loose": []
+  },
+  "overlap_between_sc_sets": {
+    "SC1&SC2_tight": [
+      "Benzthiazide",
+      "Folic acid",
+      "Indomethacin",
+      "Probenecid"
+    ],
+    "SC1&SC2_loose": [
+      "Diflunisal",
+      "Terfenadine",
+      "Thiabendazole"
+    ],
+    "SC2_loose&SC2_tight": []
+  },
+  "code_references": [
+    {
+      "file": "scripts/01_curate.py",
+      "lines": [
+        "\"\"\"Step 01: parse, standardize, decontaminate vs SC1/SC2, curate AqSolDB.",
+        "for f, set_name in [(\"SC1_processed\", \"SC1\"), (\"SC2_tight_processed\", \"SC2_tight\"), (\"SC2_loose_processed\", \"SC2_loose\")]:"
+      ]
+    },
+    {
+      "file": "scripts/07_test_eval.py",
+      "lines": [
+        "# ---------------- external SC sets (caveated: logS0 intrinsic solubility; SC1 row alignment suspect) ----------------",
+        "for f, col in [(\"SC2_tight_processed\", \"logS0\"), (\"SC2_loose_processed\", \"logS0\"), (\"SC1_processed\", \"logS0_uM\")]:"
+      ]
+    },
+    {
+      "file": "scripts/08_verify.py",
+      "lines": [
+        "for f in [\"SC1_processed\", \"SC2_tight_processed\", \"SC2_loose_processed\"]:"
+      ]
+    },
+    {
+      "file": "scripts/09_write_model_docs.py",
+      "lines": [
+        "| SC2-tight RMSE / R\u00b2 (logS0, see caveats) | {'n/a' if not perf['external'].get('SC2_tight_processed') else f3(perf['external']['SC2_tight_p"
+      ]
+    },
+    {
+      "file": "scripts/r2_07_test_eval.py",
+      "lines": [
+        "for f, col in [(\"SC2_tight_processed\", \"logS0\"), (\"SC2_loose_processed\", \"logS0\")]:"
+      ]
+    },
+    {
+      "file": "scripts/r2_08_verify.py",
+      "lines": [
+        "for f in [\"SC1_processed\", \"SC2_tight_processed\", \"SC2_loose_processed\"]:"
+      ]
+    },
+    {
+      "file": "scripts/r2_08b_verify_ergfix.py",
+      "lines": [
+        "for f in [\"SC1_processed\", \"SC2_tight_processed\", \"SC2_loose_processed\"]:"
+      ]
+    }
+  ]
+}

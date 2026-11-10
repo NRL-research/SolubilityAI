@@ -1,0 +1,61 @@
+{
+  "blend_name": "greedy_blend",
+  "combination": "weighted_sum",
+  "formula": "logS_blend = sum_i w_i * logS_i   (w_i >= 0, sum_i w_i = 1)",
+  "weights_fitted_on": "out-of-fold predictions over the 5 scaffold-grouped CV folds of train+val only; never refitted on test",
+  "weights_sum": 1.0,
+  "members": [
+    {
+      "config": "lightgbm[mordred]",
+      "folder": "lightgbm_mordred",
+      "weight": 0.308293390932,
+      "active": true
+    },
+    {
+      "config": "catboost[rdkit_full_eng]",
+      "folder": "catboost_rdkit_full_eng",
+      "weight": 0.146367334924,
+      "active": true
+    },
+    {
+      "config": "lightgbm[solubility_ai]",
+      "folder": "lightgbm_solubility_ai",
+      "weight": 0.118463703448,
+      "active": true
+    },
+    {
+      "config": "xgboost[mordred]",
+      "folder": "xgboost_mordred",
+      "weight": 0.138945331609,
+      "active": true
+    },
+    {
+      "config": "gatv2[graph+5desc]",
+      "folder": "gatv2_graph_plus_5desc",
+      "weight": 0.062117179803,
+      "active": true
+    },
+    {
+      "config": "lightgbm[rdkit_descriptors]",
+      "folder": "lightgbm_rdkit_descriptors",
+      "weight": 0.136375612915,
+      "active": true
+    },
+    {
+      "config": "hist_gb[mordred]",
+      "folder": "hist_gb_mordred",
+      "weight": 0.08943744637,
+      "active": true
+    }
+  ],
+  "member_prediction": "each member's prediction is the mean over that model's saved seeds -- see its folder's predict.py",
+  "test_rmse": 0.9519811919118538,
+  "test_mae": 0.6468347618995137,
+  "test_r2": 0.8554627835409971,
+  "cv_pooled_oof_rmse": 0.9898,
+  "n_test": 1974,
+  "target": "LogS (log10 aqueous solubility, mol/L)",
+  "max_abs_diff_rebuilt_from_saved_vs_recorded": 2.650171886386943e-07,
+  "test_rmse_from_saved_models": 0.9519811916599018,
+  "test_r2_from_saved_models": 0.8554627836175038
+}

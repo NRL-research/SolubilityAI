@@ -1,0 +1,30 @@
+{
+  "selection_rule": "lowest in-domain 5-fold grouped CV RMSE among all round-1 and round-2 configurations",
+  "candidate": "r2_blend_nnls",
+  "candidate_cv_rmse_indomain": 0.8828842790124409,
+  "reference": "blend_nnls (round-1 final)",
+  "reference_cv_rmse_indomain": 0.8866485563203887,
+  "primary_test": "one-sided paired cluster bootstrap on in-domain test RMSE, 2000 resamples, seed 8, alpha 0.05",
+  "round2_configs_evaluated": [
+    "r2_blend_nnls",
+    "r2_stack_ridge",
+    "r2_stack_lgbm_meta",
+    "r2_lgbm_dm_huber",
+    "r2_lgbm_desc_mordred_avalon_erg",
+    "r2_catboost_dm",
+    "r2_lgbm_dm_m2v",
+    "r2_lgbm_dm_crip_pack",
+    "r2_lgbm_d_av_erg",
+    "r2_lgbm_d_ap_tt",
+    "r2_lgbm_d_crip_pack",
+    "r2_gnn_hybrid_ens3",
+    "r2_gnn_hybrid_ens2",
+    "gnn_hybrid_s43",
+    "gnn_hybrid_s44",
+    "r2_gnn_mpnn_ens2",
+    "gnn_mpnn_s43",
+    "r2_svr_dm",
+    "r2_svr_m2v",
+    "r2_lgbm_m2v"
+  ]
+}

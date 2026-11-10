@@ -1,0 +1,94 @@
+{
+  "training_pool_n": 7898,
+  "training_pool_unique_inchikeys": 7898,
+  "internal_test_n": 1974,
+  "sets": {
+    "SC1": {
+      "file": "SC1_processed.csv",
+      "rows_in_file": 32,
+      "published_size": 35,
+      "target_column": "logS0_uM",
+      "unique_inchikeys": 31,
+      "duplicate_inchikey_rows": [
+        {
+          "name": "Ephedrine",
+          "inchikey": "KWGRBVOPPLSCSI-UHFFFAOYSA-N"
+        },
+        {
+          "name": "Probenecid",
+          "inchikey": "KWGRBVOPPLSCSI-UHFFFAOYSA-N"
+        }
+      ],
+      "overlap_with_training_pool": 0,
+      "overlap_with_training_pool_keys": [],
+      "overlap_with_internal_test": 0,
+      "overlap_with_internal_test_keys": [],
+      "target_n_missing": 4,
+      "target_min": -7.741174617904467,
+      "target_max": -1.874303941302342,
+      "target_mean": -3.903431870448967,
+      "target_frac_negative": 1.0,
+      "units_verdict": "already log-scale (LogS); NO conversion applied",
+      "units_conversion_applied": "none",
+      "unparseable_smiles": [],
+      "n_usable": 28
+    },
+    "SC2_tight": {
+      "file": "SC2_tight_processed.csv",
+      "rows_in_file": 100,
+      "published_size": 100,
+      "target_column": "logS0",
+      "unique_inchikeys": 100,
+      "duplicate_inchikey_rows": [],
+      "overlap_with_training_pool": 0,
+      "overlap_with_training_pool_keys": [],
+      "overlap_with_internal_test": 0,
+      "overlap_with_internal_test_keys": [],
+      "target_n_missing": 0,
+      "target_min": -6.79,
+      "target_max": -1.18,
+      "target_mean": -4.0271,
+      "target_frac_negative": 1.0,
+      "units_verdict": "already log-scale (LogS); NO conversion applied",
+      "units_conversion_applied": "none",
+      "unparseable_smiles": [],
+      "n_usable": 100
+    },
+    "SC2_loose": {
+      "file": "SC2_loose_processed.csv",
+      "rows_in_file": 32,
+      "published_size": 32,
+      "target_column": "logS0",
+      "unique_inchikeys": 32,
+      "duplicate_inchikey_rows": [],
+      "overlap_with_training_pool": 0,
+      "overlap_with_training_pool_keys": [],
+      "overlap_with_internal_test": 0,
+      "overlap_with_internal_test_keys": [],
+      "target_n_missing": 0,
+      "target_min": -10.4,
+      "target_max": -1.24,
+      "target_mean": -5.24125,
+      "target_frac_negative": 1.0,
+      "units_verdict": "already log-scale (LogS); NO conversion applied",
+      "units_conversion_applied": "none",
+      "unparseable_smiles": [],
+      "n_usable": 32
+    }
+  },
+  "selection_use": {
+    "used_for_model_selection": false,
+    "used_for_hyperparameter_tuning": false,
+    "used_for_early_stopping": false,
+    "used_for_blend_or_stack_weight_fitting": false,
+    "only_use_in_project": "InChIKey membership was used to REMOVE 108 overlapping molecules from AqSolDB before any split was created (scripts/01_sc_leakage_filter.py). No SC solubility value was read at any point.",
+    "evidence": [
+      "Model/hyperparameter selection used only 5-fold scaffold CV over train+val (scripts/06_tree_cv.py, 22_new_model_families.py).",
+      "Blend and stack weights were fitted only on train+val out-of-fold predictions (scripts/07_assemble_cv_results.py, 23_stacking.py).",
+      "No tree model used early stopping; HistGB sets early_stopping=False.",
+      "The SC target columns are not read anywhere in the training pipeline -- only the inchikey column is, and only in 01_sc_leakage_filter.py."
+    ]
+  },
+  "VERDICT_no_training_overlap": true,
+  "VERDICT_valid_external_evaluation": true
+}
