@@ -201,8 +201,7 @@ def pillar1_pillar2_descriptors(smiles_list):
 
 # ---------------------------------------------------------------------------
 # DISSOLVR's custom "mose" homomorphism counts + Joback/Abraham thermo
-# proxies, lifted verbatim from dissolvr/featurizer.py so both codepaths
-# share one implementation.
+# proxies.
 # ---------------------------------------------------------------------------
 
 _JOBACK_INCREMENTS = {
