@@ -200,11 +200,6 @@ As for the DN pipeline, `12_train_and_save.py` recreates all 14 archived models.
 | Paired-bootstrap comparisons (Tables S16–S17) | `results/statistical_comparisons.*`, `round3/results/statistical_comparisons_round3.*` | `results/07_test_metrics.*`, `results/r2_07_verdict.json` |
 | External benchmarks (Tables 6, S21–S30) | `benchmark/results/` (`33_stats.*`, `34_*`, `predictions/`) | `results/external/` (`ext_metrics.csv`, `pred_<model>__<set>.csv`) |
 
-## Not included
-
-The pipelines' run logs and their own written reports are not included; the pre-registration and verification
-files they rely on are. The instructions given to each pipeline are reproduced verbatim in SI Section S1. The
-earlier project's DISSOLVR reproduction (`dissolvr/`) is left out of the snapshot, as explained above.
 
 ## License
 
